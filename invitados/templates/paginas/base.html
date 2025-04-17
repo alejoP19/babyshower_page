@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>{% block titulo %} {% endblock %}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Russo One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="{% static 'stad_players_app/img/IconStadplayers.ico' %}" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'invitados/css/styles_blog_app.css' %}" rel="stylesheet" />
+    <link href="{% static 'invitados/css/styles_tienda.css' %}" rel="stylesheet" />
+
+    <link rel="icon" href="../assets/imagenes/icon4.png" type="image/png">
+    <link rel="stylesheet" href="{% static 'invitados/css/stylesBase.css' %}">
+    <link rel="stylesheet" href="{% static 'invitados/css/styles_cuenta_regresiva.css' %}">
+    <script src="{% static 'invitados/js/cuenta_regresiva.js' %}"></script>
+  
+
+</head>
+
+
+    <header class="header">
+          
+        
+                <img src="{% static 'invitados/img/tinasentada.jpg' %}" alt="" class="header__img">
+                <span>  <img src="" alt="" class="header__img"></span>
+                <h1></h1>
+              
+                   
+
+                <div class="contenedor"> 
+                        <div class="contenedor__item">
+                            <h5>Days</h5>
+                           <div class="numbers" id="dias"></div>
+                        </div>
+
+                        <div class="contenedor__item">
+                            <h5> Hours</h5>
+                           <div  class="numbers" id="horas"></div>
+                        </div>
+                     
+                        <div class="contenedor__item">
+                            <h5>Minuts</h5>
+                          <div class="numbers" id="minutos"></div>
+                        </div>
+
+                        <div class="contenedor__item">
+                            <h5>Seconds</h5>
+                            <div class="numbers" id="segundos"></div>
+                        </div>
+                    
+                    
+                 
+                </div>   
+          
+        
+
+    </header>
+    <nav class="nav">
+          <div class="nav__ul-container">
+                <!-- ul.nav__ul>li.nav__item*4>a.nav__link{link $} -->
+                <ul class="nav__ul">
+                      <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                      <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
+                      <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                      <li class="nav__item"><a href="#" class="nav__link link--login">Log In</a></li>
+                </ul>
+
+          </div>
+          <div class="nav__logo-container">
+                <img class="nav__logo" src="{% static 'invitados/img/gorditos_osito.jpg' %}">
+          </div>
+
+    </nav>
+
+    
+    
+    {% block content %}
+   
+        
+        
+        
+        
+        
+  
+    
+    <footer>
+        <div class="rights__text">Derechos Reservados &copy;StadPlayers Group</div>
+        <div class="privacy_text">   &middot;
+            <a href="#" >Privacy Policy</a>
+            &middot;
+            <a href="#";>Terms &amp; Conditions</a>
+        </div>
+    </footer>
+    
+   
+{% endblock %}

@@ -1,0 +1,664 @@
+body {
+    position:relative;
+    margin: 0;
+    padding: 0;
+    font-family: "Russo One";
+    box-sizing: border-box;
+    min-height: 100vh;
+    max-height: fit-content;
+  
+   
+    --card-bg-color: rgba(12, 32, 53, 0.356);
+    --card-back-time-color:rgba(4, 20, 29, 0.836);
+    --card-bg-hover-color: rgba(3, 3, 3, 0.699);
+    --card-hover-tittle-color:rgb(255, 255, 255);
+    --card-border-color: #00ffea;
+    --card-bg-front-info-color: rgba(0, 0, 0, 0.692);
+    --card-front-tittle-color:rgb(255, 255, 255);
+    --card-front-more-info-color:rgb(205, 150, 248);
+    --card-front-author-color:  rgb(255, 81, 0);
+  
+  
+  
+  }
+
+  .blog__img {
+
+    background: url(../img/blog9.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
+      height: 100%;
+      width: 100%;
+  
+  }
+  
+
+   /* --------> BLOG / GRID - SECTION STYLES <--------- */
+
+   .grid{
+    width: 100%;
+    display: grid;
+    padding: 12px;
+    gap: 12px; /* La misma separación para row y column*/
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    
+    /* grid-template-rows: repeat(auto-fit, minmax(fit-content)); */
+    /* si definimos (grid-auto-flow: column) en vez de (grid-auto-rows )
+    agragará columnas*/
+    grid-auto-rows:repeat(auto-fit, minmax(max-content,1fr));
+    
+    /* grid-auto-rows: Crea filas automaticas*/
+    grid-auto-flow: row;
+    
+    /*Le damos el  tamaño de las nuevas columnas*/
+    grid-auto-columns:  minmax(100px, 300px); 
+    
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom:5%;
+    font-size: clamp(0.5rem, 2.2vw, 1.2rem);    
+    }
+    .grid--item{
+      
+        background-color:transparent;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        height: fit-content;
+    }
+      /* --------> BLOG /   END GRID - SECTION STYLES  <--------- */
+      /*_________________________________________________________*/
+      
+    
+    
+    
+      /* --------> BLOG / CARD - SECTION STYLES <--------- */
+    
+     .card__blog{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: var(--card-bg-color);
+      margin: 2px auto;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var( --card-border-color);
+    }
+    
+    .card__blog__back{
+    
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 25px 18px ;
+    
+    transform: perspective(900px)rotateY(180deg);
+    border-radius: 8px;
+    text-wrap: pretty;
+    
+    
+    }
+    
+    .card__blog__back p {
+    margin-top: 20px;
+    font-weight: lighter;
+    color: #02ffff;
+    font-size: clamp(0.8rem, 2.2vw, 1rem);    
+    
+    
+    }
+    
+    .card__blog__back, .card__blog__front{
+    backface-visibility: hidden;
+    transition: transform 1s;
+    background-color:var(--card-back-time-color);
+    border-radius: 5px;
+    padding-bottom:8px ;
+    }
+    
+    .card__blog:hover .card__blog__front{
+      transform: perspective(900px)rotateY(180deg);
+    }
+    .card__blog:hover .card__blog__back{
+      transform: perspective(500px)rotateY(360deg);
+      background-color: var(--card-bg-hover-color);
+      color: var(--card-hover-tittle-color) ;
+      outline: 1.5px solid  var(--card-hover-tittle-color);
+      outline-offset: -7px;
+      outline-style:dotted;
+      border-radius: 10px;
+    }
+    
+    .card__blog__front{
+    transform: perspective(900px)rotateY(0deg); 
+    
+    }
+    .card__blog__worker{
+    max-height: 200px;
+    overflow: hidden;
+    display: block;
+    }
+    .card__blog__worker img{
+    border-top-left-radius: 8px;
+    border-top-right-radius:8px ;
+    width: 100%;
+    
+    }
+    .card__blog__data{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    margin: 10px ;
+    padding: 10px;
+    background-color:var(--card-bg-front-info-color);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding-bottom:6px ;
+    text-align: center;
+    
+    
+    
+    }
+    .card__blog__data span{
+    font-size: clamp(1rem, 2.2vw, 1.2rem); 
+    align-self: center;  
+    margin: auto; 
+    text-align: center;
+    margin: 5px 0px 15px 0px;
+    display: inline-flex;
+    font-weight: lighter;
+    color:var(--card-front-tittle-color)
+    }
+    
+    .card__blog__data .ver__info{
+      color:var(--card-front-more-info-color);
+      font-size: clamp(0.8rem, 2.2vw, 1rem); 
+      font-style: normal;
+      text-decoration: none;
+      font-weight: lighter;  
+      padding: 15px;
+    
+    }
+    .card__blog__data h5{
+      font-size: clamp(0.9rem, 2.2vw, 1.1rem); 
+      margin-right: 6px; 
+      padding-top:15%;
+      padding-bottom: 1%;
+       text-align: right;
+       color:var(--card-front-author-color);
+       font-weight: lighter;
+       text-shadow:   -1px 1px 0px rgb(0, 0, 0),
+       1px 0px 1px rgb(255, 255, 255),
+       1px 0px 0px rgb(0, 0, 0) ;
+       
+    
+    }
+    .card__blog__back span{
+    display: flex;
+    justify-content: center;
+    font-size: clamp(0.9rem, 2.2vw, 1.2rem);  
+    font-weight: 400;
+    
+    }
+    
+    .card__blog:nth-child(2) img{
+    filter: grayscale();
+    width: 100%;
+    height: 112px
+    }
+    
+    /* --------> BLOG / END CARD SECTION STYLES  <--------- */
+    /*_________________________________________________________*/
+    
+    
+     
+    
+    
+      /* --------> BLOG - GRID CATEGORIAS - SECTION STYLES <--------- */
+    
+    .grid__filter__categorias{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr) ;
+      grid-template-rows: repeat(3, 50px) ;
+      justify-content:space-between;
+     
+      margin: auto;
+      width: 95%;
+      padding: 10px 10px 10px 30px;
+      gap: 10px;
+      margin-top: -25%;
+      margin-bottom: 25%;
+      background-color: rgba(1, 3, 15, 0.897);
+      outline: 1px solid rgba(0, 247, 255, 0.46);
+      border-radius: 8px;
+      text-align: center;
+      font-weight: lighter;
+      font-size: clamp(0.8rem, 2.2vw, 1.1rem);
+    
+    }
+    
+    
+    
+    .grid__filter__categorias h3:first-child{
+      font-size: clamp(1rem, 2.2vw, 1.3rem);
+      margin-top: 7px;
+      text-align: center;
+      grid-column-start: 1;
+      grid-column-end: span 4;
+      grid-row-start: 1;
+      grid-row-end: span 1;
+      color: #ff4f09;
+    
+    
+    }
+    
+    .categorias--item {
+      font-size: clamp(0.5rem, 2.2vw, 0.8rem);
+      display: grid;
+      margin: 0;
+      padding: 0;
+      margin: auto;
+    width: 100%;
+      padding: 8px 10px 8px 10px;
+      color: #fafafa;
+      text-transform: uppercase;
+    background-color: transparent;
+      transition: .5%;
+      letter-spacing: 1px;
+    margin-top: 5px;
+    text-decoration: none;
+    outline: 1px solid rgba(0, 247, 255, 0.26);
+    border-radius: 12px;
+    gap:3px ;
+    transition: background-color 1s, border-radius 0.8s, outline 0.5s,
+    outline-offset 0.5s;
+    outline: -1;
+    outline-offset: 5;
+    
+    
+    }
+    .categorias--item:hover {
+    
+      background: #cfffec;
+      color: #00b32d;
+      text-shadow: 0px 1px 0px #000000;
+      border-radius: 5px;
+      box-shadow: 0 0 0px #acfbff,
+      0 0 5px #a9fbff;
+      outline: 1px solid rgba(1, 197, 83, 0.966);
+      border-radius: 18px;
+      outline-offset: -3px;
+    }
+    
+    a{
+    
+      justify-items: center;
+    }
+     .categorias--item .icon{
+      color: #fa5311;
+      font-size: 15px;
+     }
+    .grid__filter__categorias .btn__volver{
+    display: grid;
+    margin: auto;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-column-end:span 3;
+    grid-row-end: span 3;
+    margin-top: 8%;
+    margin-bottom: 2%;
+    
+    background-color: #00f97cc5;
+    color: rgba(255, 255, 255, 0.888);
+    outline: 1px solid rgba(255, 255, 255, 0.809);
+    text-shadow: -1px 1px 1px #000000;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: background-color 1s, border-radius 0.8s, outline 0.7s,
+    outline-offset 0.5s;
+    outline: 0.1;
+    outline-offset: 5;
+    font-size: 15px;
+    
+    }
+    
+    .btn__volver:hover {
+      background-color: rgba(0, 0, 0, 0.242);
+      outline: 2px solid rgba(0, 255, 94, 0.596);
+      color: rgb(22, 255, 119);
+      text-shadow: -1px 1px 1px #000000;
+      border-radius: 25px;
+      box-shadow: 0px 0px  20px rgb(84, 250, 134);
+      font-weight: 800;
+      padding: 5px 20px;
+    
+      
+    
+    }
+    
+    
+    /* --------> END BLOG - GRID CATEGORIAS - SECTION STYLES <--------- */
+    /*_________________________________________________________*/
+    
+    
+    /* --------> MOSTRAR BLOGS POR CATEGORIA -SECTION STYLES <--------- */
+/*___________________________________________________________________*/
+
+
+/* --------> MOSTRAR BLOGS POR CATEGORIA - GRID CATEGORIA - SECTION STYLES <--------- */
+
+.grid__categoria{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) ;
+    grid-template-rows: repeat(2, 40px) ;
+    margin: auto;
+    min-height: fit-content;
+    width:fit-content;
+    padding: 3% 12% 3% 12%;
+    gap: 5px;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    background-color: rgba(1, 3, 15, 0.897);
+    outline: 1px solid rgba(0, 247, 255, 0.46);
+    border-radius: 50px;
+    
+    font-weight: lighter;
+    font-size: clamp(0.8rem, 2.2vw, 1.1rem);
+    
+    }
+    
+    .grid__categoria h4:first-child{
+      font-size: clamp(1.4rem, 2.2vw, 1.5rem);
+      margin-top: 10px;
+      justify-self: center;
+      grid-column-start: 1;
+      grid-column-end: span 4;
+      grid-row-start: 1;
+      grid-row-end: span 1;
+      color: #ff4f09;
+    
+    
+    }
+    
+    .categoria--item{
+    font-size: clamp(1rem, 2.2vw, 0.8rem);
+    margin-left: 23px;
+    padding: 3px 0px 3px 0px ;
+    width: 100%;
+    color: #fafafa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    gap: 3px;
+    }
+    
+    
+    
+     .categoria--item .icon{
+      color: #fa5311;
+      font-size: 20px;
+    
+     }
+    
+     /* --------> MOSTRAR BLOGS POR CATEGORIA -BOTON VOLVER - SECTION STYLES <--------- */
+    
+    
+    .btn__vovler_cate{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    margin-top: -30%;
+    margin-bottom: 30%;
+    width: max-content;
+    
+    background-color: #01ff41e5;
+    color: rgba(255, 255, 255, 0.888);
+    outline: 1px solid rgba(0, 0, 0, 0.809);
+    text-shadow: -1px 1px 1px #000000;
+    font-weight:lighter;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: background-color 1s, border-radius 0.8s, outline 0.7s,
+    outline-offset 0.5s;
+    outline: 0.1;
+    outline-offset: 5;
+    font-size: 15px;
+    
+    }
+    
+    .btn__vovler_cate:hover {
+      background-color: rgba(0, 0, 0, 0.747);
+      outline: 2px solid rgba(0, 238, 255, 0.664);
+      color: rgb(0, 204, 255);
+      text-shadow: 5px 2px 0px #000000
+      5px 2px 0px #ffffff;
+      border-radius: 25px;
+      box-shadow: 0px 0px  20px rgb(84, 203, 250);
+      font-weight: 800;
+      padding: 10px 20px;
+    
+      
+    
+    }
+    .grid{
+      margin-bottom: 40%;
+    }
+    
+    /* --------> END MOSTRAR BLOG POR CATEGORIA  - GRID CATEGORIA - SECTION STYLES <--------- */
+    /*_________________________________________________________*/
+    
+
+     /*---------------> <<< QUERIES  STYLES >>> <---------------*/
+/*____________________________________________________________/
+
+
+/*----------> BLOG - GRID CARDS  <<< QUERIES >>> <-----------*/
+
+@media screen and (min-width: 620px) {
+
+
+    .grid{
+    
+      width: 100%;
+      display: grid;
+      padding: 12px;
+      margin-top: 3%;
+      margin-bottom:3%;
+      grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+      font-size: clamp(0.5rem, 2vw, 0.8rem); 
+      }
+    
+      /*---------->  END - BLOG - GRID CARDS  <<< QUERIES >>> <-----------*/
+    /*________________________________________________________*/
+      
+    
+    
+      /*----------> BLOG - GRID  CATEGORIAS SECTION  <<< QUERIES >>> <-----------*/
+    
+      @media screen and (min-width: 620px) {
+      .grid__filter__categorias{
+      background-color: rgba(1, 3, 15, 0.897);
+      outline: 1px solid rgba(0, 255, 153, 0.46);
+      gap: 10px;
+      margin-top: 8%;
+      justify-content:center;
+      margin-bottom: 15%;
+      }
+    
+    
+    .grid__filter__categorias h3:first-child{
+      font-size: clamp(0.8rem, 2.2vw, 1.3rem);
+      margin-top: 7px;
+      color: #ff0055;
+    }
+       
+      
+      
+      .categorias--item{
+        gap: 0px;
+        width: 60%;
+      padding:10px 5px;
+      color: #88ffc8;
+      outline: 0.7px solid  #02fd77;
+      justify-content: center;
+    
+      }
+    
+    
+      .grid__filter__categorias .btn__volver{
+      margin-top: 6%;
+      margin-bottom: 3%;
+        
+      background-color: #fbfffdc5;
+      color: rgba(1, 172, 78, 0.938);
+      outline: 2px solid rgba(0, 192, 96, 0.973);
+      text-shadow: -1px 2px 1px #000000;
+      font-weight: 400;
+    
+      padding: 5px 50px;
+      border-radius: 10px;
+      transition: background-color 1s, border-radius 0.8s, outline 0.7s,
+      outline-offset 0.5s;
+      outline: 0.1;
+      outline-offset: 5;
+      font-size: 18px;
+          
+        }
+        
+        .btn__volver:hover {
+          background-color: rgba(0, 0, 0, 0.242);
+          outline: 2px solid rgba(0, 255, 94, 0.596);
+          color: rgb(22, 255, 119);
+          text-shadow: -1px 1px 1px #000000;
+          border-radius: 25px;
+          box-shadow: 0px 0px  20px rgb(84, 250, 134);
+          font-weight: 800;
+          padding: 5px 20px;
+        
+          
+        
+        }
+    
+    } 
+    }
+    
+      /*---------->  END - BLOG - GRID  CATEGORIAS SECTION  <<< QUERIES >>> <-----------*/
+    /*________________________________________________________*/
+      
+    
+    
+    
+    
+    /* --------> BLOG - CARD SECTION <<<  QUERIES  >>><--------- */
+    
+    @media screen and (min-width: 620px) {
+    
+    
+    .card__blog__back p {
+    margin-top: 30px;
+    
+    }
+    
+    .card__blog__data a{
+    margin: 0 10px;
+    font-style: oblique;
+    
+    }
+    
+    }
+    /* --------> END - BLOG CARD SECTION <<<  QUERIES  >>>  <--------- */
+    /*_________________________________________________________*/
+    
+    
+    
+    
+    /*----------> BLOG /  MOSTRAR BLOGS POR CATEGORIAS <<< QUERIES >>> <-----------*/
+/*___________________________________________________________________*/
+
+
+
+
+/*----------> BLOG / GRID - CATEGORIA <<< QUERIES >>> <-----------*/
+
+
+@media screen and (min-width: 620px) {
+    /* --------> MOSTRAR BLOGS POR CATEGORIA - GRID CATEGORIA - SECTION STYLES <--------- */
+   
+   .grid__categoria{
+   
+     padding: 3% 8% 3% 8%;
+     margin-top: 8%;
+     margin-bottom: 10%;
+     font-weight: lighter;
+   
+     
+     }
+     
+     .grid__categoria h4:first-child{
+      
+       margin-top: 0px;
+     }
+     
+     .categoria--item{
+   
+   margin-left:7%;
+     padding: 8px 0px 5px 0px ;
+   
+   
+     }
+     
+      .categoria--item .icon{
+       font-size: 25px;
+   
+      }
+     
+      /* --------> MOSTRAR BLOGS POR CATEGORIA -BOTON VOLVER - SECTION STYLES <--------- */
+     
+     
+     .btn__vovler_cate{
+     margin-top: -30%;
+     margin-bottom: 18%;
+     padding: 10px 100px;
+     font-size: 15px;
+     
+     }
+     
+     .btn__vovler_cate:hover {
+       border-radius: 25px;
+       font-weight: 800;
+       padding: 10px 90px;
+     
+       
+     
+     }
+     .grid{
+       margin-bottom: 40%;
+     }
+     
+   } 
+   
+   /*---------->   BLOG / GRID - CATEGORIA <<< QUERIES >>>  <-----------*/
+   /*________________________________________________________*/
+   
+   
+   
+   
+   
+   
+   /*---------->   BLOG /  MOSTRAR CATEGORIAS <<< QUERIES >>>  <-----------*/
+   /*________________________________________________________*/
+   
+    

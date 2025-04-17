@@ -1,0 +1,688 @@
+body {
+  position:relative;
+  margin: 0;
+  padding: 0;
+  font-family: "Russo One";
+  box-sizing: border-box;
+  min-height: 100vh;
+  max-height: fit-content;
+
+}
+
+
+div,
+nav,
+ul,
+i,
+h1,
+img {
+  box-sizing: border-box;
+}
+
+
+
+/* <------------------ STYLES <<<< BASES >>>>  --------------------->*/
+/* ________________________________________________________________________________*/
+
+
+/* ------> HEADER  /  <<<< BASES >>>>  ------ */
+
+.header__base {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  background-color: rgba(0, 0, 0, 0.645);
+
+
+  min-height: 15dvh;
+  width: clamp(100%, 100%, 90%);
+  min-width: max-content;
+
+  font-size: clamp(0.5rem, 2.2vw, 1.2rem);
+  align-items: center;
+  gap: 20px;
+
+}
+
+.titulo__header__base{
+  background-color: rgba(0, 60, 255, 0.178);
+  text-shadow: 3px 0px 8px rgb(0, 0, 0), 5px 0px 15px rgb(14, 216, 243);
+  /* background-color: transparent; */
+  border: 1px solid rgba(252, 45, 8, 0.644);
+  height: max-content;
+  border-radius: 8px;
+  padding:12px 27px 10px 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+  margin: auto;
+ border-radius: 30px;
+  gap: 3px;
+  justify-content: center;
+  margin-right: 10%;
+
+
+
+
+}
+
+.tit__left--part__base {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 1, 14);
+  color: rgb(255, 255, 255);
+  font-size:14px;
+}
+.tit__balon__icon__base {
+  margin-top: 2px;
+  color: rgb(255, 255, 255);
+}
+
+.tit__right--part__base {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 250, 250);
+  color: rgb(255, 0, 0);
+  font-size: 14px;
+}
+
+
+/*----------> TITULO_BIENVENIDA  / <<<< base >>>>  <-----------*/
+
+/* .tit__bienvenida__base {
+  display: none;
+  } */
+  
+  .titulo__bienvenida__base{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+    background-color: rgba(21, 29, 180, 0.301);
+    padding: 6px 12px;
+    border: 1px solid rgba(255, 47, 67, 0.774);
+    border-radius: 20px;
+    margin-left: 30px;
+margin-top: 6PX;
+
+    font-size: 14px;
+    font-weight: bold;
+    gap: 10px;
+    
+   color: rgb(255, 255, 255);
+   text-decoration: underline;
+  text-decoration-color: rgb(3, 253, 240);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(1, 19, 77);
+  text-shadow: 5px 0px 20px rgba(0, 255, 106, 0.89),
+  -5px 0px 10px rgb(103, 16, 216);
+  
+    border-radius: 8px;
+    transition: background-color 2s, border-radius 1s, outline 1s,
+    outline-offset 0.8s;
+    outline: 0;
+    outline-offset: 0;
+  }
+  
+
+  
+  
+  .titulo__bienvenida__base:hover {
+  
+    background-color: rgba(0, 0, 0, 0.699);
+    border: 2px solid rgba(0, 247, 255, 0.267);
+    color: rgb(217, 255, 0);
+    border-radius: 35px;
+    padding:15px 20px 15px 22px;
+    outline: 1px solid rgba(251, 255, 0, 0.959);
+    outline-offset: -7px;
+gap: 10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(1, 43, 97);
+    text-shadow: 8px 0px 30px rgba(132, 0, 255, 0.842),
+      -8px 0px 20px rgb(0, 204, 255);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 217, 255);
+  }
+
+ 
+
+/*----------> ICONO_FORM  / <<<< base >>>>  <-----------*/
+
+.form--icon--base {
+  color: #ffffffc9 ;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+
+.form--icon--base:hover {
+  color: #ffee00 ;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+
+  /*----------> NAV_LOGO  /  <<<< base >>>>  <-----------*/
+  .nav__logo__base {
+
+
+
+  margin-right: 6%;
+align-self: center;
+    width: clamp(2rem, 3.5vw, 4rem);
+  }
+
+   /*----------> HEADER_ ENDS  / <<<< BASE >>>>  <-----------*/
+ /*_______________________________________________________*/
+
+
+
+/*----------> IMAGENES INICIO  / <<<< BASE >>>>  <-----------*/
+  .inicio--sesion--img{
+
+    background: url(../img/futbol_Inicio.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
+      height: 100vw;
+      width: 100%;
+  
+  
+  }
+  
+
+  .crear--usuario--img {
+  margin: 0;
+  padding: 0;
+    background: url(../img/futbol_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  
+    height: 100vw;
+    width: 100%;
+  
+  
+  }
+  
+
+  
+
+   /*----------> IMAGENES_INICIO ENDS  <-----------*/
+ /*____________________________________________*/
+
+
+
+ /*---------->  FORM_LOGIN SECTION  / <<<<  INPUTS >>>>  <-----------*/
+
+ .form {
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  gap: 30px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+margin-top: 10%;
+width: 100%;
+max-width: 75%;
+height:fit-content;
+max-height: fit-content;
+
+ padding: 25px 20px 50px 20px;
+   background-image: linear-gradient( #204d7adb,#000000e1);
+   border-radius: 12px;
+   text-decoration-color: #000000;
+   box-shadow: 10px 10px 30px rgba(0, 255, 204, 0.438);
+   color: rgb(255, 255, 255);
+    
+
+   font-size: clamp(1rem, 2vw, 1.3rem);
+   font-weight: lighter;
+   font-family: inherit;
+   text-align: center;
+
+
+  
+  animation: aparecer both;
+  animation-timeline: view();
+  animation-range: cover 20% contain 40%;
+ }
+
+
+ .tittle{
+     font-family: inherit;
+     font-size: clamp(1.5rem, 2vw, 2rem);
+     font-weight:lighter;
+     color: #f5f5f5;
+ }
+.form-text{
+  color: #00ff88;
+  font-size: smaller;
+  padding: 0px 0px 20px  0;
+  font-weight: lighter;
+ }
+ .form-label{
+  color: #fff1ac;
+  font-size: large;
+  font-weight: lighter;
+ }
+
+ .invalid-feedback{
+  margin-top: -5%;
+  color: #ff0630;
+  font-size: 18px;
+  font-weight: lighter;
+ }
+
+ 
+
+ input {
+  display: flex;
+ flex-direction: column;
+ margin: auto;
+ width: 85%;
+ margin-top: 10px;
+ margin-bottom: 30px;
+
+  background: linear-gradient( #ffffffd3,#01f0fdde);
+  border-radius: 8px;
+  color: rgb(5, 1, 37);
+  /* box-shadow: 2px 2px 9px rgba(255, 247, 0, 0.814); */
+
+ font-size: 20px;
+ padding: 5px  5px;
+ font-weight:600;
+}
+
+
+ 
+/*---------->  FORM_LOGIN SECTION  / <<< BOTONES >>> <-----------*/
+.btn__section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+width:max-content ;
+align-self: center;
+
+}
+.btn__section .btn--login {
+  background-color: #00f94fc5;
+  color: rgba(255, 255, 255, 0.888);
+  outline: 1px solid rgba(255, 255, 255, 0.809);
+  text-shadow: -1px 1px 1px #000000;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 8px 8px;
+  border-radius: 10px;
+  transition: background-color 1s, border-radius 0.8s, outline 0.7s,
+  outline-offset 0.5s;
+  outline: 0.1;
+  outline-offset: 5;
+  font-size: 16px;
+  margin: -10px 80px 15px 80px;
+}
+
+.btn__section .btn--login:hover {
+  background-color: rgba(0, 0, 0, 0.242);
+  outline: 2px solid rgba(0, 255, 94, 0.596);
+  color: rgb(22, 255, 119);
+  text-shadow: -1px 1px 1px #000000;
+  border-radius: 25px;
+  box-shadow: 0px 0px  20px rgb(84, 250, 134);
+  font-weight: 800;
+  padding: 10px 10px;
+
+}
+
+.btn__section .recover--pass  {
+font-family: inherit;
+padding: 3px 10px;
+  color: #fde403;
+
+font-size: 13px;
+text-decoration: none;
+text-transform: uppercase;
+background-color: transparent;
+
+
+transition: .5%;
+margin: 8px 55px  -13px 55px ;
+letter-spacing: 1px;
+
+
+
+} 
+
+.btn__section .recover--pass:hover {
+
+  background: #7affcc;
+  color: #ff0048;
+  text-shadow: 0px 2px 1px #3a353e;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+0 0 35px #03e9f4, 0 0 20px #03e9f4;
+outline: 1px solid rgba(255, 0, 76, 0.596);
+
+    border-radius: 16px;
+outline-offset: -1px;
+
+margin: 8px 50px  -13px 50px ;
+
+
+}
+
+.new_user__button {
+  background-color: #0a4878d0;
+  color: rgba(255, 255, 255, 0.888);
+  outline: 1px solid rgba(255, 255, 255, 0.809);
+  text-shadow: -1px 2px 1px #000000;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 9px 5px  9px 5px;
+  border-radius: 10px;
+  outline: 1;
+  
+  font-size: 16px;
+  margin:10px 95px 15px 95px;
+  transition: background-color 1s, border-radius 0.8s, outline 0.7s,
+  outline-offset 0.5s;
+}
+.new_user__button:hover {
+  background-color: rgba(0, 0, 0, 0.242);
+  outline: 2px solid rgba(0, 255, 251, 0.596);
+  color: rgb(22, 220, 255);
+  text-shadow: -1px 1px 1px #000000;
+  border-radius: 25px;
+  box-shadow: 0px 0px  20px rgb(84, 153, 250);
+  font-weight: 800;
+  padding: 10px 10px;
+} 
+
+ /*----------> FORM_LOGIN SECTION / <<<  ENDS >>>  <-----------*/
+ /*________________________________________________*/
+
+
+
+/*----------> FOOTER  / <<<<  BASE>>>>  <-----------*/
+
+  .base__footer {
+    position:absolute;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+ 
+     background-color: rgba(0, 0, 0, 0.818);
+     /* top: 100%;
+      bottom: 0; */
+
+      margin-top: 25%;
+     align-items:center;
+      justify-content: space-between;
+      height: fit-content;
+      width: 100%;
+ 
+    
+      font-size: clamp(0.5rem, 2.0vw, 1.rem);
+      padding: 10px 0px 30px 0px;
+       
+  }
+    
+    
+    
+    .left__text__footer--base {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 30px;
+      margin-right: 50px;
+      color: rgb(255, 71, 86);
+     letter-spacing: 1px;
+     word-spacing: 1px;
+     text-align: center;
+     
+    }
+    .left__text__footer--base:hover{
+      color: rgba(20, 214, 101, 0.952);
+    }
+    
+    .right_text__footer--base a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      
+      margin-right: 45px;
+      margin-left: 0px;
+      color: rgba(136, 255, 235, 0.959);
+    }
+    .right_text__footer--base a:hover {
+  
+      color: rgba(255, 5, 80, 0.959);
+    }
+
+  /*----------> FOOTER / <<<  ENDS >>>  <-----------*/
+ /*________________________________________________*/
+
+ /*----------> MENSAJES-DE-ERROR LOGIN <-----------*/
+
+ .mensaje__de__error{
+   
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: -28%;
+  width: 100%;
+  max-width: 75%;
+  height:fit-content;
+  max-height: fit-content;
+  padding: 10px 18px 10px 18px;
+
+  background-color: #000000f7;
+  color: rgb(255, 3, 45);
+  text-decoration-color: #000000;
+  box-shadow: -5px 8px 40px rgba(4, 243, 159, 0.704);
+  border-radius: 12px;
+ 
+  
+ font-size: clamp(1rem, 2vw, 1rem);
+ font-weight: 100;
+ font-family: inherit;
+ text-align: center;
+ 
+} 
+ 
+   /*----------> MENSAJES DE ERROR  LOGIN / <<<  ENDS >>>  <-----------*/
+ /*________________________________________________*/
+
+
+
+
+
+/*---------->  / <<<< BASE  / QUERIES >>>>  <-----------*/
+/* ___________________________________________________________ */
+
+/*<-----------------  HEADER__BASE  / <<< QUERIES >>>>  ----------->*/
+
+@media screen and (min-width: 620px) {
+
+  .header__base {
+
+  height: 25dvh;
+   width: clamp(100%, 100%, 100%);
+  font-size: clamp(0.5rem, 1.5vw, 1rem);
+justify-content: center;
+
+}
+}
+
+/*----------> TITULO_HEADER_BASE    <<< QUERIES >>>> <-----------*/
+
+@media screen and (min-width: 620px) {
+  .titulo__header__base{
+margin-right: 15%;
+    border-radius: 30px;
+    padding: 8px 70px 8px 70px;
+    gap: 3px;
+   }
+   
+   
+
+
+.tit__left--part__base {
+  margin-left: 6px;
+  font-size: small;
+  font-size: 45px;
+}
+
+.tit__balon__icon__base {
+  margin-top: 6px;
+  font-size: 48px;
+}
+
+.tit__right--part__base {
+  font-size: small;
+  font-size: 45px;
+   
+}
+}
+  /*----------> TITULO_BIENVENIDA _BASE  / <<<< QUERIES>>>>  <-----------*/
+
+  @media screen and (min-width: 620px) { 
+  .titulo__bienvenida__base{
+     font-size: 18px;
+
+     padding: 8px 20px;
+     margin-left: 8%;
+   }
+   
+   .titulo__bienvenida__base:hover {
+    margin-top: 7px;
+    padding: 12px 28px 12px 30px;
+     font-size: 24px;
+   }                       
+
+   /*----------> FORM--ICON _BASE  / <<<< QUERIES>>>>  <-----------*/
+
+   .form--icon__base {
+    color: #ffffffc9 ;
+   
+    font-size: 18px;
+    margin-top: 1px;
+ margin-left: 20px;
+ padding: 0px 0px 0px 5px; 
+ 
+ }
+ 
+ .form--icon__base:hover {
+  color: #fbff00c9 ;
+ font-size: 28px;
+ }
+
+    /*---------->  NAV_LOGO_BASE / <<<< QUERIES>>>>  <-----------*/
+
+    @media screen and (min-width: 620px) { 
+      .nav__logo__base {
+
+
+
+          margin-right:8%;
+          align-self: center;
+          width: clamp(2rem, 3.5vw, 4rem);
+        }
+
+     
+  }
+
+        /*---------->  FOOTER- BASE/ <<<< QUERIES>>>>  <-----------*/
+
+.base__footer{
+height: 12dvh;
+margin-top: 5%;
+}
+
+.left__text__footer--base {
+display: flex;
+align-items: center;
+flex-direction: row;
+ margin-left: 50px;
+}
+
+.left__text__footer--base:hover{
+  color: rgba(20, 214, 101, 0.952);
+}
+        
+.right_text__footer--base {
+  margin-top: 12px;
+display: flex;
+align-items: center;
+
+}
+    
+}
+
+/*---------->  / <<<< FORMULARIO_INICIO_BASE  / <<<<  QUERIES  >>>>  <-----------*/
+/*---------->  FORM / <<<<  QUERIES >>>>  <-----------*/
+
+@media screen and (min-width: 620px) {
+  .form {
+
+ margin-top: 5%;
+ width: 35%;
+ max-width: 50%;
+ padding: 25px 30px 50px 30px; 
+  }
+
+  input {
+  width: 65%;
+  font-size: 20px;
+  padding: 5px  5px;
+  font-weight:600;
+ }
+
+ 
+ 
+ /*---------->  FORM_LOGIN SECTION  / <<< BOTONES >>> <-----------*/
+ 
+ .btn__section .btn--login {
+   margin: -10px 120px 15px 120px;
+ }
+ 
+ .btn__section .recover--pass  {
+   padding: 8px 10px;
+ } 
+ 
+ .btn__section .recover--pass:hover {
+ margin: 8px 80px  -13px 80px ;
+ }
+ 
+ .new_user__button {
+   padding: 10px 5px  10px 5px;
+   margin:15px 130px 15px 130px;
+ }
+ 
+ 
+  /*----------> FORM_LOGIN SECTION   QUERIES / <<<  ENDS >>>  <-----------*/
+  /*________________________________________________*/
+ 
+           
+ }
+ 
+

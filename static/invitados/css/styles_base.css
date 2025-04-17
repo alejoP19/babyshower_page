@@ -1,0 +1,487 @@
+body {
+  position:relative;
+  margin: 0;
+  padding: 0;
+  font-family: "Russo One";
+  box-sizing: border-box;
+  min-height: 100vh;
+  max-height: fit-content;
+
+ 
+  --card-bg-color: rgba(12, 32, 53, 0.356);
+  --card-back-time-color:rgba(4, 20, 29, 0.836);
+  --card-bg-hover-color: rgba(3, 3, 3, 0.699);
+  --card-hover-tittle-color:rgb(255, 255, 255);
+  --card-border-color: #00ffea;
+  --card-bg-front-info-color: rgba(0, 0, 0, 0.692);
+  --card-front-tittle-color:rgb(255, 255, 255);
+  --card-front-more-info-color:rgb(205, 150, 248);
+  --card-front-author-color:  rgb(255, 81, 0);
+
+
+
+}
+
+
+
+ 
+
+
+
+/* --- HEADER SECTION STYLES--- */
+
+.barra_nav_principal {
+  width: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: rgba(5, 24, 53, 0.907);
+  outline: 1px solid rgba(187, 187, 187, 0.609);
+  min-height: 13dvh;
+  width: clamp(100%, 100%, 90%);
+ 
+  font-size: clamp(0.5rem, 2.2vw, 1.2rem);
+  align-items: center;
+  gap: 20px;
+}
+
+
+.titulo__app {
+  background-color: rgba(0, 60, 255, 0.178);
+  text-shadow: 3px 0px 8px rgb(0, 0, 0), 5px 0px 15px rgb(14, 216, 243);
+  /* background-color: transparent; */
+  border: 1px solid rgba(252, 45, 8, 0.644);
+  height: max-content;
+  border-radius: 8px;
+  padding: 8px 15px 8px 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  top: 8;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.tit__left--part {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 1, 14);
+  color: rgb(255, 255, 255);
+  font-size: small;
+}
+.tit__balon__icon {
+  margin-top: 2px;
+  color: rgb(255, 255, 255);
+}
+
+.tit__right--part {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 250, 250);
+  color: rgb(255, 0, 0);
+  font-size: small;
+}
+
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 80vh;
+  width: 80vw;
+  size: 80%;
+} 
+
+/* --------> TITULO BIENVENIDA  SECTION STYLES  <--------- */
+
+.titulo__bienvenida--desktop {
+  display: none;
+  }
+  
+  .titulo__bienvenida {
+    
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  bottom:-300px;
+  margin: auto;
+  max-width: max-content;
+  min-height: max-content;
+  
+    background-color: rgba(13, 16, 65, 0.301);
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 72, 90, 0.664);
+    border-radius: 20px;
+  
+    color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: rgb(3, 253, 240);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(1, 19, 77);
+  text-shadow: 5px 0px 20px rgba(0, 255, 106, 0.89),
+  -5px 0px 10px rgb(103, 16, 216);
+  
+    border-radius: 8px;
+    transition: background-color 2s, border-radius 1s, outline 1s,
+      outline-offset 0.8s;
+    outline: 0;
+    outline-offset: 0;
+  }
+  
+  
+  
+  
+  .titulo__bienvenida:hover{
+  
+    background-color: rgba(0, 0, 0, 0.699);
+    border: 2px solid rgba(0, 247, 255, 0.267);
+    color: rgb(255, 255, 255);
+    border-radius: 35px;
+    padding:18px 30px;
+    align-items: center;
+    outline: 1px solid rgba(0, 247, 255, 0.959);
+    outline-offset: -7px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(1, 43, 97);
+    text-shadow: 8px 0px 30px rgba(132, 0, 255, 0.842),
+      -8px 0px 20px rgb(0, 204, 255);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 217, 255);
+  }
+
+  .login__base:hover{
+   
+color: rgb(255, 247, 0);
+  }
+  
+/* --------> BUTTON-LOGIN-BASE  SECTION STYLES  <--------- */
+
+  .button-login-base {
+    color: rgba(255, 255, 255, 0.815);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    border-radius: 8px;
+    transition: background-color 1s, border-radius 0.8s, outline 0.8s,
+      outline-offset 0.8s;
+    outline: 0;
+    outline-offset: 0;
+  }
+  .button-login-base:hover {
+    background-color: rgba(0, 60, 255, 0.178);
+    color: rgb(255, 0, 34);
+    border-radius: 20px;
+    padding: 0px 5px;
+    margin: 0px 0px 0px 20px;
+  align-self: center;
+    padding: 8px;
+    outline: 2px solid rgba(253, 3, 3, 0.596);
+    outline-offset: -3px;
+  }
+  /* --------> END BUTTON-LOGIN-BASE SECTION STYLES  <--------- */
+  /*_________________________________________________________*/
+  
+
+
+/* --------> FOTTER BASE - SECTION STYLES <--------- */
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.753);
+  justify-content: space-between;
+  padding: 25px 0px;
+  width: 100%;
+  min-width: 100%;
+  font-size: clamp(0.8rem, 2.2vw, 1rem);
+
+
+
+}
+.privacy_text {
+     
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-right: 6%;
+  
+ 
+ 
+}
+.rights__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 50px;
+  color: rgb(255, 76, 106);
+font-weight: 500;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+}
+.rights__text:hover{
+  color: rgba(119, 253, 175, 0.952);
+}
+.privacy_text a {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  color: rgba(81, 253, 244, 0.959);
+}
+.privacy_text a:hover{
+  color: rgba(255, 5, 80, 0.959);
+}
+
+/* --------> END FOOTER  BASE SECTION STYLES  <--------- */
+/*_________________________________________________________*/
+
+
+
+
+
+  /*---------------> <<< QUERIES  STYLES >>> <---------------*/
+/*____________________________________________________________/
+
+
+/*----------> HEADER SECTION STYLES <<< QUERIES >>>  <-----------*/
+
+@media screen and (min-width: 620px) {
+  .barra_nav_principal {
+    background-color: rgba(3, 13, 28, 0.907);
+    min-height: 18dvh;
+    width: clamp(100%, 100%, 100%);
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    justify-content: center;
+  }
+}
+
+/*----------> TITULO_APP <<< QUERIES >>>  <-----------*/
+
+@media screen and (min-width: 620px) {
+  .titulo__app {
+    margin-right:24%;
+    border-radius: 30px;
+    padding: 8px 60px 8px 60px;
+    gap: 3px;
+  }
+}
+
+/*----------> TIT_LEFT--PART  /  TITE__BALON__ICON  /
+              TIT_RIGHT--PART  <<< QUERIES >>>  <---*/
+
+@media screen and (min-width: 620px) {
+  .tit__left--part {
+    margin-left: 6px;
+    font-size: small;
+    font-size: 25px;
+  }
+
+  .tit__balon__icon {
+    margin-top: 1px;
+    font-size: 25px;
+  }
+
+  .tit__right--part {
+    font-size: small;
+    font-size: 25px;
+  }
+}
+
+/* --------> TITULO BIENVENIDA  SECTION STYLES  <<< QUERIES >>> <--------- */
+
+@media screen and (min-width: 620px) {
+  .titulo__bienvenida{
+    display:none;
+  }
+
+  .titulo__bienvenida--desktop {
+   display: flex;
+margin: auto;
+    background-color: rgba(13, 16, 65, 0.301);
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 72, 90, 0.664);
+    border-radius: 20px;
+  
+    color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: rgb(3, 253, 240);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(1, 19, 77);
+  text-shadow: 5px 0px 20px rgba(0, 255, 106, 0.89),
+  -5px 0px 10px rgb(103, 16, 216);
+  
+    border-radius: 8px;
+    transition: background-color 2s, border-radius 1s, outline 1s,
+      outline-offset 0.8s;
+    outline: 0;
+    outline-offset: 0;
+  
+}
+
+
+.titulo__bienvenida--desktop:hover {
+
+  background-color: rgba(0, 0, 0, 0.699);
+  border: 2px solid rgba(0, 247, 255, 0.267);
+  color: rgb(255, 255, 255);
+  border-radius: 35px;
+  padding:18px 30px;
+  outline: 1px solid rgba(0, 247, 255, 0.959);
+  outline-offset: -7px;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(1, 43, 97);
+  text-shadow: 8px 0px 30px rgba(132, 0, 255, 0.842),
+    -8px 0px 20px rgb(0, 204, 255);
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 217, 255);
+}
+
+
+/* --------> END HEADER SECTION STYLES <<< QUERIES >>>  <--------- */
+/*_________________________________________________________*/
+
+
+
+
+
+  /*---------->  FOOTER- BASE/ <<<< QUERIES>>>>  <-----------*/
+
+  @media screen and (min-width: 620px) {
+  footer{
+   
+    padding: 30px 0px;
+   
+    }
+    
+
+    .rights__text {
+     
+      margin-left: 30px;
+      margin-right: 50px;
+    }
+  
+    .privacy_text {
+     
+      display: flex;
+      align-items: center;
+      justify-content: space-between;  
+    
+    }
+  
+        
+    } 
+  }
+/*---------->  END - FOOTER-BASE  <<< QUERIES >>> <-----------*/
+/*________________________________________________________*/
+
+
+
+
+
+.menu--principal--img {
+
+  background: url(../img/futbol.jpg);
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  
+    height: 100vw;
+    width: 100%;
+
+}
+
+
+
+.ImgRecuperarContraseña{
+
+  background: url(../../assets/img/password.jpg);
+}
+
+.ImgJUGADOR {
+  background: url(../../assets/img/crearjugador.jpg);
+}
+
+
+
+
+
+.Imgverjugador {
+  background: url(../../assets/img/verjugador.jpg);
+}
+
+
+.Imghistorial {
+  background: url(../../assets/img/historialJugador.jpg);
+}
+
+.Imginspeccionar {
+  background: url(../../assets/img/inspeccionar.jpg);
+}
+
+.Imgtitulos {
+  background: url(../../assets/img/titulos.jpg);
+}
+
+.imgGenerarReporte{
+  background: url(../../assets/img/GenerarReporte.jpg);
+}
+
+.imgReportesIndex{
+
+  background: url(../img/ReportesIndex.jpg);
+  background-position: center;
+}
+
+.imgVerReporteIndividual{
+  background: url(../../assets/img/reporteIndividual.jpg);
+}
+
+.imgING {
+
+  background: url(../../assets/img/estadio_3.jpg);
+}
+
+.imgver {
+  background: url(../../assets/img/estadio_3.jpg);
+}
+
+.imgVerEstadIndividual {
+  background: url(../../assets/img/estadio_2.jpg);
+}
+
+
+
+.imgIngreEstad {
+  background: url(../../assets/img/ingreEstad.jpg);
+}
+
+
+.imgCon {
+  background: url(../../assets/img/portero-sostiene-la-pelota-en-el-estadio-durante-un-partido-de-fútbol-escena-245670749.webp);
+}
