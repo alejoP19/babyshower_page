@@ -36,30 +36,33 @@
     <header class="header">
           
         
-                <img src="{% static 'invitados/img/tinasentada.jpg' %}" alt="" class="header__img">
+                <!-- <img src="{% static 'invitados/img/tinasentada.jpg' %}" alt="" class="header__img">
                 <span>  <img src="" alt="" class="header__img"></span>
                 <h1></h1>
-              
-                   
+               -->
+                   <h4>
+                    May 3, 2025 &middot; Shaveport, Lou, USA <br>
+                    ¡Days To Go!
+                   </h4>
 
                 <div class="contenedor"> 
-                        <div class="contenedor__item">
-                            <h5>Days</h5>
+                        <div class="contenedor--item">
+                            <h5 class="date--item" >Days</h5>
                            <div class="numbers" id="dias"></div>
                         </div>
 
-                        <div class="contenedor__item">
-                            <h5> Hours</h5>
+                        <div class="contenedor--item">
+                            <h5 class="date--item" > Hours</h5>
                            <div  class="numbers" id="horas"></div>
                         </div>
                      
-                        <div class="contenedor__item">
-                            <h5>Minuts</h5>
+                        <div class="contenedor--item">
+                            <h5 class="date--item" >Minuts</h5>
                           <div class="numbers" id="minutos"></div>
                         </div>
 
-                        <div class="contenedor__item">
-                            <h5>Seconds</h5>
+                        <div class="contenedor--item">
+                            <h5 class="date--item" >Seconds</h5>
                             <div class="numbers" id="segundos"></div>
                         </div>
                     
@@ -67,25 +70,21 @@
                  
                 </div>   
           
-        
-
-    </header>
-    <nav class="nav">
-          <div class="nav__ul-container">
-                <!-- ul.nav__ul>li.nav__item*4>a.nav__link{link $} -->
-                <ul class="nav__ul">
-                      <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                      <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
-                      <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-                      <li class="nav__item"><a href="#" class="nav__link link--login">Log In</a></li>
-                </ul>
-
-          </div>
-          <div class="nav__logo-container">
-                <img class="nav__logo" src="{% static 'invitados/img/gorditos_osito.jpg' %}">
-          </div>
-
-    </nav>
+                
+                <input class="header__checkbox" type="checkbox" id="open-menu">
+                <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+                <div class="header__logo-container">
+                      <img class="header__logo" src="{% static 'invitados/img/imagen_logo.jpg' %}" alt="">
+                </div>
+                <nav class="header__nav">
+                      <ul class="header__nav-list">
+                            <li class="header__nav-item"><a href="#profile">About Us</a></li>
+                            <li class="header__nav-item"><a href="#portfolio">Portfolio</a></li>
+                            <li class="header__nav-item"><a href="#contact">Contact</a></li>
+                      </ul>
+                </nav>
+            </header>
+            
 
     
     

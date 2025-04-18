@@ -10,47 +10,77 @@
   align-self: flex-end;
   justify-items: center;
   justify-content: space-around;
-  color: #cfb20b;
-  background-color: #d6d6d6a9;
+
+  background-color: #c84afa5b;
   box-shadow: 1px 0px 3px #47474781;
-  border-radius: 10px;
-  width: 0%;
-  height: 0px;
+  border-radius: 15px;
+  width: fit-content;
+  height: fit-content;
   min-width: max-content;
   min-height: max-content;
 
-  padding: 5px 5px  ;
-gap: 3px;
- margin: auto;
- margin-bottom: 2%;
+  padding: 2px 2px  ;
+  gap: 0px;
+  margin: auto;
+  margin-bottom: 5%;
   min-width: fit-content;
   text-align: center;
 }
 
-.contenedor__item{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
- 
-  width: 70px;
-  height: 30px;
-  min-width:max-content;
-  min-height:max-content;
-  padding: 5px 10px;
+.contenedor--item{
+  width: max-content;
+  height: max-content;
+  justify-content: center;
+  min-width:100px;
+  min-height:100px;
+  padding: 5px 5px ;
   text-align: center;
-  display: inline-block;
+  align-content: center;
   margin: 5px;
-  border: 3px solid #ffffff;
-  border-radius: 5px;
+  outline-offset: 1px solid #cfcfcfd0;
+  border-radius:50px;
+  color: rgba(253, 216, 52, 0.87);
+
+
 }
-.contenedor__item h5{
-  font-size: medium;
+
+.contenedor--item:hover{
+  padding: 8px 8px ;
+  outline: 1px solid #cfcfcfd0;
+color: rgb(255, 255, 255);
+}
+.contenedor--item .date--item:hover{
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+ 
+}
+
+.date--item {
+
+     filter: drop-shadow(5px 0px 50px #000000)
+    drop-shadow(1px 0px 3px #000000); 
+  text-shadow: -3px 1px 3px #9b02c9;
+   font-family: 'Pristina';
+
+   align-self: center;
+   font-weight: lighter;
+   padding: 0%;
+
+ 
 }
 .numbers{
   align-self: center;
-  font-size:30px;
+  font-size: clamp(1.2rem, 2.2vw, 2rem);
   margin: auto;
-  color: #ff6296;
+  color: #ff008c;
+  text-shadow: -2px 1px 1px #000000;
+  font-weight: lighter; 
+
+  
+}
+
+.numbers:hover{
+  font-size: clamp(1.5rem, 2.2vw, 2.5rem);
+  color: #ffffff;
   
 }
 
