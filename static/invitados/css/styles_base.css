@@ -1,487 +1,452 @@
-body {
-  position:relative;
-  margin: 0;
-  padding: 0;
-  font-family: "Russo One";
-  box-sizing: border-box;
-  min-height: 100vh;
-  max-height: fit-content;
+body{
+      padding: 0;
+      margin: 0;
+      font-family: 'Perpetua Titling MT';
+      box-sizing: border-box;
+      background-color: #ffe3e3fa;
+     
+     
+}
 
+
+ div,ul,nav,header,footer,a,li,label,body,h1,p,img{
+      margin: 0;
+      padding: 0;
+      box-sizing: border;
+
+      }
+
+/*---------->HEADER SECTION <-----------*/
+
+.header{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+     
+      width: 100%;
+      height: 15dvh;
+      align-items: center;
+      max-width: 100%;
+      
  
-  --card-bg-color: rgba(12, 32, 53, 0.356);
-  --card-back-time-color:rgba(4, 20, 29, 0.836);
-  --card-bg-hover-color: rgba(3, 3, 3, 0.699);
-  --card-hover-tittle-color:rgb(255, 255, 255);
-  --card-border-color: #00ffea;
-  --card-bg-front-info-color: rgba(0, 0, 0, 0.692);
-  --card-front-tittle-color:rgb(255, 255, 255);
-  --card-front-more-info-color:rgb(205, 150, 248);
-  --card-front-author-color:  rgb(255, 81, 0);
-
-
-
-}
-
-
-
+      background-color: rgba(221, 197, 197, 0.74);
+        
+    
+  }
+  
+.header img{
+     position: absolute;
  
+    margin: auto;
+    width:80%;
+         
+        }
+
+.header h3{
+ position: absolute;
+ margin: auto;
+ width:80%;
+ }
+
+ .open_menu_button{
+      position: absolute;
+       color: rgb(255, 255, 255);
+      text-shadow: -2px 2px 2px #440375;
+      font-weight: bold; 
+      font-size: 2rem;
+      font-weight: lighter;
+   
+      align-items: center;
+      margin-left: 6%;
+     margin-bottom: 7%;
+      left: 0;
+      width:14%;
+      height:14%;
+    
+     
+
+}
+
+
+/* <---- HEADER SECTION  ENDS ----->*/
+/*__________________________________*/
 
 
 
-/* --- HEADER SECTION STYLES--- */
 
-.barra_nav_principal {
-  width: 100%;
-  min-width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-sizing: border-box;
-  background-color: rgba(5, 24, 53, 0.907);
-  outline: 1px solid rgba(187, 187, 187, 0.609);
-  min-height: 13dvh;
-  width: clamp(100%, 100%, 90%);
+/* --- FOTO SECTION --- */
+.foto__section{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100vh;
+      box-sizing: border-box;
+      background-image: url(../../invitados/img/brand.gif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      z-index: 10;
+  
+  
+}
+.foto__section h4{
+      margin-top: 70%;
+      text-align: center;
+      align-self: center;
+      color: rgb(255, 255, 255);
+    
+      font-weight: lighter;
+      font-family: 'Script MT';
+      font-size: clamp(1.6rem, 2.2vw, 2rem);
+      /* filter: drop-shadow(0px 0px 50px #ff03b3)
+      drop-shadow(0px 0px 5px #e02b8e); */
+      text-shadow: -3px 1px 3px #1b0119;
+
+}
+
+
+/* <---- FOTO SECTION  ENDS ----->*/
+/*__________________________________*/
+
+
+/* <---- NAV HDR SECTION ----->*/
+
+.nav_hdr{
+           
+         display: flex;
+         flex-direction: row;
+         justify-content: center; 
+         align-content: center;
+         text-align: center;
+         font-family: 'Script MT';
+          width: 100%;
+        padding: 20px 0;
+         
+         
+            
+   }
+
+
+
+.nav_hdr-item{
+     
+list-style: none;       
+}
+
+.nav_hdr-item a{
+      color: #000000;
+      font-size: x-large;
+      font-weight: 600;     
+}
+/* <---- NAV HDR SECTION  ENDS ----->*/
+/*__________________________________*/
+
+
+
+
+.header__checkbox{
+      display: none;     
+}
+
+.nav_hdr-item a:not(:is(:hover,:active)){
+      text-decoration: none;
+}
+
+.header:has(input[type="checkbox"]:checked).header img{
+      display: none;
+      }
+
+
+
+.header:has(input[type="checkbox"]:checked).header{
+display: flex;
+background: linear-gradient(rgb(168, 58, 211), rgb(248, 3, 154));
+height:120dvh;
+font-family: 'Script MT';
+width: 100%;
+
+}
+
+.header:has(input[type="checkbox"]:not(:checked)).header .nav_hdr{
+      display: none;
+}
+
+
+.header:has(input[type="checkbox"]:checked).header .nav_hdr{
+     
+       
+         flex-direction: column;
+         justify-self: center;
+          width: max-content;
+          margin-bottom: 100%;
+          font-size: 30px;
+        
+      }
+
+
+
+
+     
  
-  font-size: clamp(0.5rem, 2.2vw, 1.2rem);
-  align-items: center;
-  gap: 20px;
+.header:has(input[type="checkbox"]:checked).nav_hdr__base{
+      display: flex;
+    
+      z-index: 10;
+      
+      }
+        
+
+
+.header__checkbox:checked~ .open_menu_button{
+      color: rgb(0, 0, 0);
+      text-shadow: -1px 1px 2px #ffffff;
+      top: 20px;
+      align-self: flex-start;
+      font-weight: lighter;
+
+}
+
+.header .header__checkbox{
+      display: none;
+   
+}
+.header__logo__container img {
+      
+      display: flex;
+      flex-direction: row;
+      max-width: 180px;
+      width: 180%;
+      /* margin-bottom: 25%; */
+    
+     
+   
 }
 
 
-.titulo__app {
-  background-color: rgba(0, 60, 255, 0.178);
-  text-shadow: 3px 0px 8px rgb(0, 0, 0), 5px 0px 15px rgb(14, 216, 243);
-  /* background-color: transparent; */
-  border: 1px solid rgba(252, 45, 8, 0.644);
-  height: max-content;
-  border-radius: 8px;
-  padding: 8px 15px 8px 15px;
-  display: flex;
-  flex-direction: row;
-  gap: 3px;
-  top: 8;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+
+
+.header:has(input[type="checkbox"]:not(:checked)) .header__logo__container img
+{
+      display:none;      
 }
 
-.tit__left--part {
-  text-decoration: underline;
-  text-decoration-color: rgb(255, 1, 14);
-  color: rgb(255, 255, 255);
-  font-size: small;
-}
-.tit__balon__icon {
-  margin-top: 2px;
-  color: rgb(255, 255, 255);
-}
-
-.tit__right--part {
-  text-decoration: underline;
-  text-decoration-color: rgb(255, 250, 250);
-  color: rgb(255, 0, 0);
-  font-size: small;
-}
-
-.chart-container {
-  position: relative;
-  margin: auto;
-  height: 80vh;
-  width: 80vw;
-  size: 80%;
+.header:has(input[type="checkbox"]:checked) h4,
+.header:has(input[type="checkbox"]:checked) .contenedor
+{
+      display:none;
 } 
 
-/* --------> TITULO BIENVENIDA  SECTION STYLES  <--------- */
 
-.titulo__bienvenida--desktop {
-  display: none;
-  }
-  
-  .titulo__bienvenida {
-    
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  
-  bottom:-300px;
-  margin: auto;
-  max-width: max-content;
-  min-height: max-content;
-  
-    background-color: rgba(13, 16, 65, 0.301);
-    padding: 10px 15px;
-    border: 1px solid rgba(255, 72, 90, 0.664);
-    border-radius: 20px;
-  
-    color: rgb(255, 255, 255);
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: rgb(3, 253, 240);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(1, 19, 77);
-  text-shadow: 5px 0px 20px rgba(0, 255, 106, 0.89),
-  -5px 0px 10px rgb(103, 16, 216);
-  
-    border-radius: 8px;
-    transition: background-color 2s, border-radius 1s, outline 1s,
-      outline-offset 0.8s;
-    outline: 0;
-    outline-offset: 0;
-  }
-  
-  
-  
-  
-  .titulo__bienvenida:hover{
-  
-    background-color: rgba(0, 0, 0, 0.699);
-    border: 2px solid rgba(0, 247, 255, 0.267);
-    color: rgb(255, 255, 255);
-    border-radius: 35px;
-    padding:18px 30px;
-    align-items: center;
-    outline: 1px solid rgba(0, 247, 255, 0.959);
-    outline-offset: -7px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(1, 43, 97);
-    text-shadow: 8px 0px 30px rgba(132, 0, 255, 0.842),
-      -8px 0px 20px rgb(0, 204, 255);
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color: rgb(0, 217, 255);
-  }
+/*----------> FOOTER  / <<<<  BASE>>>>  <-----------*/
 
-  .login__base:hover{
+.base__footer {
+      position:absolute;
+      display: flex;
+      align-self: flex-end;
+      flex-direction: row;
    
-color: rgb(255, 247, 0);
-  }
+       background-color: rgba(0, 0, 0, 0.818);
+       /* top: 100%;
+        bottom: 0; */
   
-/* --------> BUTTON-LOGIN-BASE  SECTION STYLES  <--------- */
-
-  .button-login-base {
-    color: rgba(255, 255, 255, 0.815);
-    font-weight: bold;
-    text-decoration: none;
-    padding: 0px 5px;
-    margin: 0px 5px;
-    border-radius: 8px;
-    transition: background-color 1s, border-radius 0.8s, outline 0.8s,
-      outline-offset 0.8s;
-    outline: 0;
-    outline-offset: 0;
-  }
-  .button-login-base:hover {
-    background-color: rgba(0, 60, 255, 0.178);
-    color: rgb(255, 0, 34);
-    border-radius: 20px;
-    padding: 0px 5px;
-    margin: 0px 0px 0px 20px;
-  align-self: center;
-    padding: 8px;
-    outline: 2px solid rgba(253, 3, 3, 0.596);
-    outline-offset: -3px;
-  }
-  /* --------> END BUTTON-LOGIN-BASE SECTION STYLES  <--------- */
-  /*_________________________________________________________*/
-  
-
-
-/* --------> FOTTER BASE - SECTION STYLES <--------- */
-
-footer {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.753);
-  justify-content: space-between;
-  padding: 25px 0px;
-  width: 100%;
-  min-width: 100%;
-  font-size: clamp(0.8rem, 2.2vw, 1rem);
-
-
-
-}
-.privacy_text {
-     
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-right: 6%;
-  
- 
- 
-}
-.rights__text {
-  display: flex;
-  flex-direction: column;
-  margin-left: 30px;
-  margin-right: 50px;
-  color: rgb(255, 76, 106);
-font-weight: 500;
-  letter-spacing: 1px;
-  word-spacing: 1px;
-  align-items: center;
-  text-align: center;
-  align-self: center;
-}
-.rights__text:hover{
-  color: rgba(119, 253, 175, 0.952);
-}
-.privacy_text a {
-  display: flex;
-  font-weight: 500;
-  align-items: center;
-  color: rgba(81, 253, 244, 0.959);
-}
-.privacy_text a:hover{
-  color: rgba(255, 5, 80, 0.959);
-}
-
-/* --------> END FOOTER  BASE SECTION STYLES  <--------- */
-/*_________________________________________________________*/
-
-
-
-
-
-  /*---------------> <<< QUERIES  STYLES >>> <---------------*/
-/*____________________________________________________________/
-
-
-/*----------> HEADER SECTION STYLES <<< QUERIES >>>  <-----------*/
-
-@media screen and (min-width: 620px) {
-  .barra_nav_principal {
-    background-color: rgba(3, 13, 28, 0.907);
-    min-height: 18dvh;
-    width: clamp(100%, 100%, 100%);
-    font-size: clamp(0.5rem, 1.5vw, 1rem);
-    justify-content: center;
-  }
-}
-
-/*----------> TITULO_APP <<< QUERIES >>>  <-----------*/
-
-@media screen and (min-width: 620px) {
-  .titulo__app {
-    margin-right:24%;
-    border-radius: 30px;
-    padding: 8px 60px 8px 60px;
-    gap: 3px;
-  }
-}
-
-/*----------> TIT_LEFT--PART  /  TITE__BALON__ICON  /
-              TIT_RIGHT--PART  <<< QUERIES >>>  <---*/
-
-@media screen and (min-width: 620px) {
-  .tit__left--part {
-    margin-left: 6px;
-    font-size: small;
-    font-size: 25px;
-  }
-
-  .tit__balon__icon {
-    margin-top: 1px;
-    font-size: 25px;
-  }
-
-  .tit__right--part {
-    font-size: small;
-    font-size: 25px;
-  }
-}
-
-/* --------> TITULO BIENVENIDA  SECTION STYLES  <<< QUERIES >>> <--------- */
-
-@media screen and (min-width: 620px) {
-  .titulo__bienvenida{
-    display:none;
-  }
-
-  .titulo__bienvenida--desktop {
-   display: flex;
-margin: auto;
-    background-color: rgba(13, 16, 65, 0.301);
-    padding: 10px 15px;
-    border: 1px solid rgba(255, 72, 90, 0.664);
-    border-radius: 20px;
-  
-    color: rgb(255, 255, 255);
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: rgb(3, 253, 240);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(1, 19, 77);
-  text-shadow: 5px 0px 20px rgba(0, 255, 106, 0.89),
-  -5px 0px 10px rgb(103, 16, 216);
-  
-    border-radius: 8px;
-    transition: background-color 2s, border-radius 1s, outline 1s,
-      outline-offset 0.8s;
-    outline: 0;
-    outline-offset: 0;
-  
-}
-
-
-.titulo__bienvenida--desktop:hover {
-
-  background-color: rgba(0, 0, 0, 0.699);
-  border: 2px solid rgba(0, 247, 255, 0.267);
-  color: rgb(255, 255, 255);
-  border-radius: 35px;
-  padding:18px 30px;
-  outline: 1px solid rgba(0, 247, 255, 0.959);
-  outline-offset: -7px;
-
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(1, 43, 97);
-  text-shadow: 8px 0px 30px rgba(132, 0, 255, 0.842),
-    -8px 0px 20px rgb(0, 204, 255);
-  font-size: 22px;
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: rgb(0, 217, 255);
-}
-
-
-/* --------> END HEADER SECTION STYLES <<< QUERIES >>>  <--------- */
-/*_________________________________________________________*/
-
-
-
-
-
-  /*---------->  FOOTER- BASE/ <<<< QUERIES>>>>  <-----------*/
-
-  @media screen and (min-width: 620px) {
-  footer{
+        margin-top: 25%;
+       align-items:center;
+        justify-content: space-between;
+        height: fit-content;
+        width: 100%;
    
-    padding: 30px 0px;
-   
+      
+        font-size: clamp(0.5rem, 2.0vw, 1.rem);
+        padding: 10px 0px 30px 0px;
+         
     }
+      
+      
+      
+      .left__text__footer--base {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 30px;
+        margin-right: 50px;
+        color: rgb(255, 71, 86);
+       letter-spacing: 1px;
+       word-spacing: 1px;
+       text-align: center;
+       
+      }
+      .left__text__footer--base:hover{
+        color: rgba(20, 214, 101, 0.952);
+      }
+      
+      .right_text__footer--base a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        margin-right: 45px;
+        margin-left: 0px;
+        color: rgba(136, 255, 235, 0.959);
+      }
+      .right_text__footer--base a:hover {
+    
+        color: rgba(255, 5, 80, 0.959);
+      }
+  
+    /*----------> FOOTER / <<<  ENDS >>>  <-----------*/
+   /*________________________________________________*/
+
+   
+
+/*----------> bar__header <<< QUERIES >>> <-----------*/
+  
+@media screen and (min-width: 600px){
+  
+  
+      .header{
+       
+        animation: header-movement ;
+        animation-fill-mode:both; 
+        animation-timeline: scroll();
+        animation-range: cover 10px contain 100px;
+        position: sticky;
+        top: 0;
+      
+        
+      }
+        
+        .nav_hdr{
+             
+              display: block;
+              position: static;
+              height: auto;
+              width: auto;
+              justify-content: space-between;  
+              background-color: initial;
+              
+            
+        }
+        .nav__hdr-list {
+         margin-top: 35%;
+              flex-direction: row;
+              height: auto;
+              width: auto;
+              gap: 20px;
+              margin-right: 40px;
+             
+             
+             
+        }
+        .nav__hdr-item a{
+            
+              font-size: large;
+              font-weight: 400;
+        }
+    
+        .nav__hdr__open-nav-button{
+              display: none;
+         } 
+    
+         .header__home__logo{
+            /* max-width: 100%;
+            width: 20px;
+            margin: 10px 20px; */
+            animation: logo-size ;
+        animation-fill-mode:both; 
+        animation-timeline: scroll();
+        animation-range: cover 10px contain 100px;
+        position: sticky;
+        top: 0;
+        }
+       
+            
+        }
+       
+  
+    /*----------> bar__header ENDS <-----------*/
+    /*-----------------------------------*/
+    
     
 
-    .rights__text {
-     
-      margin-left: 30px;
-      margin-right: 50px;
-    }
-  
-    .privacy_text {
-     
+        /*---------->  FOOTER- BASE/ <<<< QUERIES>>>>  <-----------*/
+
+
+        @media screen and (min-width: 620px) { 
+        .base__footer{
+      height: 12dvh;
+      margin-top: 5%;
+      }
+      
+      .left__text__footer--base {
       display: flex;
       align-items: center;
-      justify-content: space-between;  
-    
-    }
-  
-        
-    } 
-  }
-/*---------->  END - FOOTER-BASE  <<< QUERIES >>> <-----------*/
-/*________________________________________________________*/
+      flex-direction: row;
+       margin-left: 50px;
+      }
+      
+      .left__text__footer--base:hover{
+        color: rgba(20, 214, 101, 0.952);
+      }
+              
+      .right_text__footer--base {
+        margin-top: 12px;
+      display: flex;
+      align-items: center;
+      
+      }
+          
+      }
+/*----------> HEADER QUERIES <-----------*/
+
+@container header (min-width: 600px){
+      .nav_hdr{
+            margin-top: 0;
+            display: block;
+            position: static;
+            z-index: 1;
+            background-color: transparent;
+            height: auto;
+            width: auto;
+            justify-content: space-between;  
+          
+      }
+      .nav_hdr-item a{
+            color: rgb(1, 142, 207); 
+            font-size: large;
+            font-weight: 400;
+      }
+
+      .nav_hdr-list {
+            flex-direction: row;
+            height: auto;
+            width: auto;
+            gap: 20px;
+            margin-right: 40px;
+           
+           
+      }
+      .header__open-nav-button{
+            display: none;
+       } 
+     
+          
+      }
+/*----------> HEADER ENDS <-----------*/
+/*-----------------------------------*/
 
 
 
 
 
-.menu--principal--img {
-
-  background: url(../img/futbol.jpg);
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  
-    height: 100vw;
-    width: 100%;
-
-}
-
-
-
-.ImgRecuperarContraseña{
-
-  background: url(../../assets/img/password.jpg);
-}
-
-.ImgJUGADOR {
-  background: url(../../assets/img/crearjugador.jpg);
-}
 
 
 
 
+/* --- NAVBAR SECTION --- */
 
-.Imgverjugador {
-  background: url(../../assets/img/verjugador.jpg);
-}
-
-
-.Imghistorial {
-  background: url(../../assets/img/historialJugador.jpg);
-}
-
-.Imginspeccionar {
-  background: url(../../assets/img/inspeccionar.jpg);
-}
-
-.Imgtitulos {
-  background: url(../../assets/img/titulos.jpg);
-}
-
-.imgGenerarReporte{
-  background: url(../../assets/img/GenerarReporte.jpg);
-}
-
-.imgReportesIndex{
-
-  background: url(../img/ReportesIndex.jpg);
-  background-position: center;
-}
-
-.imgVerReporteIndividual{
-  background: url(../../assets/img/reporteIndividual.jpg);
-}
-
-.imgING {
-
-  background: url(../../assets/img/estadio_3.jpg);
-}
-
-.imgver {
-  background: url(../../assets/img/estadio_3.jpg);
-}
-
-.imgVerEstadIndividual {
-  background: url(../../assets/img/estadio_2.jpg);
-}
-
-
-
-.imgIngreEstad {
-  background: url(../../assets/img/ingreEstad.jpg);
-}
-
-
-.imgCon {
-  background: url(../../assets/img/portero-sostiene-la-pelota-en-el-estadio-durante-un-partido-de-fútbol-escena-245670749.webp);
-}

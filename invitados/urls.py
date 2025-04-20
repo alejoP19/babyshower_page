@@ -8,9 +8,9 @@ from  invitados import views
 
 urlpatterns = [
 
-path('', views.home, name="Home"),
+path('home', views.home, name="Home"),
 # path('menu_principal/', views.menu_principal, name="MenuPrincipal"),
-# path('base/', views.base, name="Base"),
+path('base/', views.base, name="Base"),
 
 # path('', include('usuarios.urls')),
 

@@ -7,7 +7,8 @@
   position: absolute;
   display: flex;
   flex-direction: row;
-  align-self: flex-end;
+  align-self: center;
+bottom: 0;
   justify-items: center;
   justify-content: space-around;
 
