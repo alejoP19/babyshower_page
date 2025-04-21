@@ -30,32 +30,31 @@
 
 <header class="header">
     
-    {% block title %}{% endblock %}
-      
-    
+    {% block titulo_pagina %} {% endblock %}
+
     <input class="header__checkbox" type="checkbox" id="open-menu">
     <div class="open_menu_button">
         <label for="open-menu" class="fas fa-bars" role="button"></label>
       
     </div>
 
-    <div class="header__logo__container">
-        <img class=" " src="{% static 'invitados/img/logo_nav10.png' %}" alt="">
-    </div>
+   
+        <img class="logo-header" src="{% static 'invitados/img/logo_nav10.2.png' %}" alt="">
+    
 
    
-</div>
+    </div>
 <div class="nav_hdr__base">
 
     <ul class="nav_hdr">
-        <li class="nav_hdr-item"><a href="#contact">Home</a></li>
-        <li class="nav_hdr-item"><a href="#profile">Registry</a></li>
+        <li class="nav_hdr-item"><a href="{% url 'Home' %}">Home</a></li>
+        <li class="nav_hdr-item"><a href="{% url 'Registry'%}">Registry</a></li>
         <li class="nav_hdr-item"><a href="#portfolio">RSVP</a></li>
         <li class="nav_hdr-item"><a href="#contact">Photos</a></li>
     </ul>
 </div>
-</header>
 
+</header>
 
 <section class="foto__section">
  
@@ -73,15 +72,15 @@
 {% endblock %}
 <footer class="base__footer">
 
-    <div class="left__text__footer--base">
-        Derechos Reservados
-        StadPlayersGroup <font color="#ff0460"> &copy; </font>
-    </div>
     <div class="right_text__footer--base">
-        <font color="#ff0460"> &middot; </font> &nbsp;
-        <a href="#">Privacy Policy</a>
-        <font color="#ff0460"> &middot; </font> &nbsp;
-        <a href="#" ;>Terms &amp; Conditions</a>
+        <font color="#7efc96"> &middot; </font> &nbsp;
+        <a href="#">Email</a>
+        <font color="#7efc96"> &middot; </font> &nbsp;
+        <a href="#" ;>Confirm Or Cancel</a>
+    </div>
+    <div class="left__text__footer--base">
+        <font color="#7efc96">  © </font>2025 Mario Alejandro Echeverry. All rights reserved.
+        
     </div>
 
 </footer>

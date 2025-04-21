@@ -19,18 +19,15 @@ body{
 /*---------->HEADER SECTION <-----------*/
 
 .header{
-      position: relative;
+      position: fixed;
       display: flex;
       flex-direction: row;
-      justify-content: center;
-
-     
+      justify-content:space-around;
       width: 100%;
       height: 15dvh;
       align-items: center;
       max-width: 100%;
-      
- 
+      z-index: 20;
       background-color: rgba(221, 197, 197, 0.74);
         
     
@@ -38,9 +35,8 @@ body{
   
 .header img{
      position: absolute;
- 
     margin: auto;
-    width:80%;
+    width:70%;
          
         }
 
@@ -70,6 +66,21 @@ body{
 }
 
 
+.logo-header{
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      top: 0;
+      right:0;
+   
+      max-width: 145px;
+      z-index: 20; 
+   
+}
+
+
+
+
 /* <---- HEADER SECTION  ENDS ----->*/
 /*__________________________________*/
 
@@ -94,7 +105,7 @@ body{
   
 }
 .foto__section h4{
-      margin-top: 70%;
+      margin-top: 40%;
       text-align: center;
       align-self: center;
       color: rgb(255, 255, 255);
@@ -113,7 +124,7 @@ body{
 /*__________________________________*/
 
 
-/* <---- NAV HDR SECTION ----->*/
+/* <---- NAV  SECTION ----->*/
 
 .nav{
            
@@ -148,6 +159,8 @@ list-style: none;
 
 
 
+/* <---- CHECKBOX SECTION STYLES ----->*/
+
 .header__checkbox{
       display: none;     
 }
@@ -163,6 +176,7 @@ list-style: none;
 
 
 .header:has(input[type="checkbox"]:checked).header{
+
 display: flex;
 background: linear-gradient(rgb(168, 58, 211), rgb(248, 3, 154));
 height:120dvh;
@@ -190,12 +204,6 @@ width: 100%;
 
 
 
-     
- 
-
-        
-
-
 .header__checkbox:checked~ .open_menu_button{
       color: rgb(0, 0, 0);
       text-shadow: -1px 1px 2px #ffffff;
@@ -205,28 +213,28 @@ width: 100%;
 
 }
 
+
 .header .header__checkbox{
       display: none;
    
 }
-.header__logo__container img {
-      
-      display: flex;
-      flex-direction: row;
-      max-width: 180px;
-      width: 180%;
-      /* margin-bottom: 25%; */
-    
-     
-   
+
+ .header:has(input[type="checkbox"]:not(:checked)).header .logo-header
+{
+      display:none;  
+          
 }
 
 
-
-
-.header:has(input[type="checkbox"]:not(:checked)) .header__logo__container img
+.header:has(input[type="checkbox"]:checked).header .logo-header
 {
-      display:none;      
+      display: flex;
+     margin-right: -7%;
+     margin-top: 1%;
+    
+
+ 
+      
 }
 
 .header:has(input[type="checkbox"]:checked) h4,
@@ -236,63 +244,75 @@ width: 100%;
 } 
 
 
+/* <---- CHECKBOX SECTION STYLES ENDS ----->*/
+/*__________________________________*/
+
+
+
 /*----------> FOOTER  / <<<<  BASE>>>>  <-----------*/
 
 .base__footer {
       position:absolute;
       display: flex;
       align-self: flex-end;
-      flex-direction: row;
+      flex-direction: column;
+      background-color: rgba(44, 18, 48, 0.74);
+      margin-top: 5%;
+      justify-content: center;
+      align-content: center;
+      height: fit-content;
+      width: 100%;
    
-       background-color: rgba(0, 0, 0, 0.818);
-       /* top: 100%;
-        bottom: 0; */
-  
-        margin-top: 25%;
-       align-items:center;
-        justify-content: space-between;
-        height: fit-content;
-        width: 100%;
-   
-      
-        font-size: clamp(0.5rem, 2.0vw, 1.rem);
-        padding: 10px 0px 30px 0px;
+      font-size: clamp(0.7rem, 2.0vw, 1rem);
+      padding: 10px 0px 30px 0px;
          
     }
       
       
       
       .left__text__footer--base {
-        margin-top: 25px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 30px;
-        margin-right: 50px;
-        color: rgb(255, 71, 86);
-       letter-spacing: 1px;
-       word-spacing: 1px;
-       text-align: center;
-       
-      }
-      .left__text__footer--base:hover{
-        color: rgba(20, 214, 101, 0.952);
-      }
-      
-      .right_text__footer--base a {
+        margin-top:-30px;
+        margin-bottom: 3%;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
-        
-        margin-right: 45px;
-        margin-left: 0px;
-        color: rgba(136, 255, 235, 0.959);
+        align-self: center;
+        color: rgb(243, 223, 255);
+        letter-spacing: 0.5px;
+       word-spacing: 1px;
+       gap: 4px;
+       
       }
+      .left__text__footer--base:hover{
+        color: rgba(255, 255, 255, 0.952);
+      }
+ 
+      .right_text__footer--base {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 5px;
+        margin: auto;
+        padding: 30px 0px;
+      
+     
+      
+        color: rgba(136, 255, 235, 0.959);
+        margin-bottom: 2%;
+      }
+      .right_text__footer--base a {
+      
+            color: #7efc96;
+            margin-bottom: 2%;
+          }
       .right_text__footer--base a:hover {
     
-        color: rgba(255, 5, 80, 0.959);
+        color: rgba(5, 255, 193, 0.959);
       }
+  
+    /*----------> FOOTER / <<<  ENDS >>>  <-----------*/
+   /*________________________________________________*/
+
   
     /*----------> FOOTER / <<<  ENDS >>>  <-----------*/
    /*________________________________________________*/

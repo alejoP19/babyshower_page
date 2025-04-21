@@ -19,26 +19,21 @@ body{
 /*---------->HEADER SECTION <-----------*/
 
 .header{
-      position: relative;
+      position: fixed;
       display: flex;
       flex-direction: row;
-      justify-content: center;
-
-     
+      justify-content:space-around;
       width: 100%;
       height: 15dvh;
       align-items: center;
       max-width: 100%;
-      
- 
+      z-index: 20;
       background-color: rgba(221, 197, 197, 0.74);
         
     
   }
-  
 .header img{
      position: absolute;
- 
     margin: auto;
     width:80%;
          
@@ -68,6 +63,19 @@ body{
      
 
 }
+
+.logo-header{
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      top: 0;
+      right:0;
+   
+      max-width: 145px;
+      z-index: 20; 
+   
+}
+
 
 
 /* <---- HEADER SECTION  ENDS ----->*/
@@ -146,7 +154,7 @@ list-style: none;
 /*__________________________________*/
 
 
-
+/* <---- CHECKBOX SECTION STYLES ----->*/
 
 .header__checkbox{
       display: none;     
@@ -186,11 +194,7 @@ width: 100%;
           font-size: 30px;
         
       }
-
-
-
-
-     
+ 
  
 .header:has(input[type="checkbox"]:checked).nav_hdr__base{
       display: flex;
@@ -199,7 +203,6 @@ width: 100%;
       
       }
         
-
 
 .header__checkbox:checked~ .open_menu_button{
       color: rgb(0, 0, 0);
@@ -214,31 +217,39 @@ width: 100%;
       display: none;
    
 }
-.header__logo__container img {
-      
-      display: flex;
-      flex-direction: row;
-      max-width: 180px;
-      width: 180%;
-      /* margin-bottom: 25%; */
-    
-     
-   
-}
 
 
-
-
-.header:has(input[type="checkbox"]:not(:checked)) .header__logo__container img
+ 
+.header:has(input[type="checkbox"]:not(:checked)).header .logo-header
 {
-      display:none;      
+      display:none;  
+          
 }
+
+
+.header:has(input[type="checkbox"]:checked).header .logo-header
+{
+      display: flex;
+     margin-right: -7%;
+     margin-top: 1%;
+    
+
+ 
+      
+}
+
 
 .header:has(input[type="checkbox"]:checked) h4,
-.header:has(input[type="checkbox"]:checked) .contenedor
+.header:has(input[type="checkbox"]:checked) .contenedor,
+.header:has(input[type="checkbox"]:checked) .titulo_registry
 {
       display:none;
 } 
+
+/* <---- CHECKBOX SECTION STYLES ENDS ----->*/
+/*__________________________________*/
+
+
 
 
 /*----------> FOOTER  / <<<<  BASE>>>>  <-----------*/
@@ -247,80 +258,141 @@ width: 100%;
       position:absolute;
       display: flex;
       align-self: flex-end;
-      flex-direction: row;
+      flex-direction: column;
+      background-color: rgba(44, 18, 48, 0.74);
+      margin-top: 5%;
+      justify-content: center;
+      align-content: center;
+      height: fit-content;
+      width: 100%;
    
-       background-color: rgba(0, 0, 0, 0.818);
-       /* top: 100%;
-        bottom: 0; */
-  
-        margin-top: 25%;
-       align-items:center;
-        justify-content: space-between;
-        height: fit-content;
-        width: 100%;
-   
-      
-        font-size: clamp(0.5rem, 2.0vw, 1.rem);
-        padding: 10px 0px 30px 0px;
+      font-size: clamp(0.7rem, 2.0vw, 1rem);
+      padding: 10px 0px 30px 0px;
          
     }
       
       
       
       .left__text__footer--base {
-        margin-top: 25px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 30px;
-        margin-right: 50px;
-        color: rgb(255, 71, 86);
-       letter-spacing: 1px;
-       word-spacing: 1px;
-       text-align: center;
-       
-      }
-      .left__text__footer--base:hover{
-        color: rgba(20, 214, 101, 0.952);
-      }
-      
-      .right_text__footer--base a {
+        margin-top:-30px;
+        margin-bottom: 3%;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
-        
-        margin-right: 45px;
-        margin-left: 0px;
-        color: rgba(136, 255, 235, 0.959);
+        align-self: center;
+        color: rgb(243, 223, 255);
+        letter-spacing: 0.5px;
+       word-spacing: 1px;
+       gap: 4px;
+       
       }
+      .left__text__footer--base:hover{
+        color: rgba(255, 255, 255, 0.952);
+      }
+ 
+      .right_text__footer--base {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 5px;
+        margin: auto;
+        padding: 30px 0px;
+      
+     
+      
+        color: rgba(136, 255, 235, 0.959);
+        margin-bottom: 2%;
+      }
+      .right_text__footer--base a {
+      
+            color: #7efc96;
+            margin-bottom: 2%;
+          }
       .right_text__footer--base a:hover {
     
-        color: rgba(255, 5, 80, 0.959);
+        color: rgba(5, 255, 193, 0.959);
       }
   
     /*----------> FOOTER / <<<  ENDS >>>  <-----------*/
    /*________________________________________________*/
 
-   
+ 
 
-/*----------> bar__header <<< QUERIES >>> <-----------*/
+
+/* <---- TITULOS_PAGINAS STYLES ----->*/
+
+.titulo_registry{
+      display: flex;
+     justify-content: center;
+  
+     color: rgb(255, 255, 255);
+     text-shadow: -2px 2px 2px #440375;
+     font-weight: bold; 
+
+}
+
+/*----------> TITULOS_PAGINAS / <<<  ENDS >>>  <-----------*/
+/*________________________________________________*/
+
+
+
+
+
+
+
+/*----------> HEADER <<< QUERIES >>> <-----------*/
   
 @media screen and (min-width: 600px){
   
   
       .header{
-       
-        animation: header-movement ;
-        animation-fill-mode:both; 
-        animation-timeline: scroll();
-        animation-range: cover 10px contain 100px;
-        position: sticky;
-        top: 0;
       
-        
+            height: 18dvh;         
       }
-        
+      .header img{
+            position: absolute;
+           margin: auto;
+           width:80%;
+                
+               }
+       
+       .header h3{
+        position: absolute;
+        margin: auto;
+        width:80%;
+        }
+       
+        .open_menu_button{
+             position: absolute;
+              color: rgb(255, 255, 255);
+             text-shadow: -2px 2px 2px #440375;
+             font-weight: bold; 
+             font-size: 2rem;
+             font-weight: lighter;
+          
+             align-items: center;
+             margin-left: 6%;
+            margin-bottom: 7%;
+             left: 0;
+             width:14%;
+             height:14%;
+           
+            
+       
+       }
+       
+       .logo-header{
+             position: absolute;
+             display: flex;
+             flex-direction: row;
+             top: 0;
+             right:0;
+          
+             max-width: 145px;
+             z-index: 20; 
+          
+       }
+       
         .nav_hdr{
              
               display: block;
