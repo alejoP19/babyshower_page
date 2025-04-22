@@ -22,13 +22,14 @@
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="" />
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="" rel="stylesheet" />
     <link href="" rel="stylesheet" />
     <link rel="stylesheet" href="{% static 'invitados/css/styles_nav_home.css' %}">
     <link rel="stylesheet" href="{% static 'invitados/css/styles_cuenta_regresiva.css' %}">
     <script src="{% static 'invitados/js/cuenta_regresiva.js' %}"></script>
+    <script src="{% static 'invitados/js/click_etiqueta_li.js' %}"></script>
 
 
 
@@ -63,10 +64,7 @@
 
 <body>
     <section class="foto__section">
-        <!-- <img src="{% static 'invitados/img/tinasentada.jpg' %}" alt="" class="header__img">
-                    <span>  <img src="" alt="" class="header__img"></span>
-                    <h1></h1>
-                   -->
+    
         <h4>
             May 3, 2025 &middot; Shaveport, Lou, USA <br>
             ¡Days To Go!
@@ -94,126 +92,58 @@
             </div>
         </div>
     </section>
-    <div class="nav">
+    <div class="nav-body">
 
-    <ul class="nav-list">
-        <li class="nav-item"><a href="{% url 'Home'%}">Home</a></li>
-        <li class="nav-item"><a href="{% url 'Registry'%}">Registry</a></li>
-        <li class="nav-item"><a href="#portfolio">RSVP</a></li>
-        <li class="nav-item"><a href="#contact">Photos</a></li>
+    <ul class="nav-list-body"  id="miLista">
+        <li  class="nav-item-body" ><a href="{% url 'Home'%}" id="ir">Home</a></li>
+        <li  class="nav-item-body"><a href="{% url 'Registry'%}">Registry</a></li>
+        <li class="nav-item-body"><a href="#portfolio">RSVP</a></li>
+        <li class="nav-item-body"><a href="#contact">Photos</a></li>
     </ul>
 </div>
     
-    <main>
+    <main class="img-main">
+  <!-- <div class="parents-img">
+      <img  src="{% static 'invitados/img/new_parents.jpg' %}" alt="">    
+  </div> -->
+       
+  <div class="card">
+
+    <div class="card__front">
+
+            <picture class="sidebar__iconos sidebar--picture">
+                <source srcset="{% static 'invitados/img/new_parents.jpg' %}" media="(max-width:700px)">
+
+                <img src="{% static 'invitados/img/new_parents.jpg' %}" alt="">
+            </picture>
+           
+                <span>¡Hello Everyone!
+                </span>
+                <P>
+                  
+We are glad you are here, now: <br>
+                
+                </P>
+               <h4>Drag the cursor here</h4>
+               <div class="icon-card">
+
+               
+                   <i class="fa-regular fa-circle-up fa-beat-fade"></i>
+               </div>
+    </div>
+    
   
-          
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
+    <div class="card__back">
+        <span>
+            Thank you for visiting our baby registry!
 
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
+        </span>
+        <P>
+            We appreciate you joining us on this journey. We are so excited to welcome our little one. We know we'll need many items as our daughter grows, but please feel free to bless her with whatever you wish. We appreciate your love and support. Love, Colby, Valentina, and Presley.</P>
 
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
 
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut nulla odio in voluptate expedita
-          quisquam optio amet adipisci nostrum, tempora vero. Cum praesentium cupiditate numquam ipsum accusamus
-          pariatur saepe?
-
+    </div>
+</div>
 
 
 
