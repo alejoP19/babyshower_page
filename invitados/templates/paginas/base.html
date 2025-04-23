@@ -40,36 +40,40 @@
 
    
         <img class="logo-header" src="{% static 'invitados/img/logo_nav10.2.png' %}" alt="">
-    
+  
+        <div class="nav_hdr__base">
 
-   
-    </div>
-<div class="nav_hdr__base">
-
-    <ul class="nav_hdr">
-        <li class="nav_hdr-item"><a href="{% url 'Home' %}">Home</a></li>
-        <li class="nav_hdr-item"><a href="{% url 'Registry'%}">Registry</a></li>
-        <li class="nav_hdr-item"><a href="#portfolio">RSVP</a></li>
-        <li class="nav_hdr-item"><a href="#contact">Photos</a></li>
-    </ul>
-</div>
-
+            <ul class="nav_hdr">
+                <li class="nav_hdr-item"><a href="{% url 'Home' %}">Home</a></li>
+                <li class="nav_hdr-item"><a href="{% url 'Registry'%}">Registry</a></li>
+                <li class="nav_hdr-item"><a href="#portfolio">RSVP</a></li>
+                <li class="nav_hdr-item"><a href="#contact">Photos</a></li>
+            </ul>
+        </div>
 </header>
 
 
-
+<div class="home__picture">
+    <div class="picture-items" >
+        <!-- <source srcset="{% static 'invitados/img/foto_home.gif' %}" media="(max-width:700px)"> -->
+        <img  class="picture-home"src="{% static 'invitados/img/foto_home.gif' %}" alt="">
+        <h4>
+            May 3, 2025 &middot; Shaveport, Lou, USA <br>
+            ¡Days To Go!
+        </h4>
+    </div>
+</div>
+<div class="nav-body">
+    <ul class="nav-list-body"  id="miLista">
+        <li  class="nav-item-body" ><a href="{% url 'Home'%}" id="ir">Home</a></li>
+        <li  class="nav-item-body"><a href="{% url 'Registry'%}">Registry</a></li>
+        <li class="nav-item-body"><a href="#portfolio">RSVP</a></li>
+        <li class="nav-item-body"><a href="#contact">Photos</a></li>
+    </ul>
+</div>
 {% block content %}
 <body>
-    <div class="home__picture">
-        <div class="picture-items" >
-            <!-- <source srcset="{% static 'invitados/img/foto_home.gif' %}" media="(max-width:700px)"> -->
-            <img  class="picture-home"src="{% static 'invitados/img/foto_home.gif' %}" alt="">
-            <h4>
-                May 3, 2025 &middot; Shaveport, Lou, USA <br>
-                ¡Days To Go!
-            </h4>
-        </div>
-    </div>
+   
 </body>
 
 {% endblock %}
