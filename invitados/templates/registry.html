@@ -10,9 +10,16 @@
 {% endblock %}          
 
   {% block content %}
-<body class="menu--principal--img" >
-
-
-
+  <body>
+    <div class="home__picture">
+        <div class="picture-items" >
+            <!-- <source srcset="{% static 'invitados/img/foto_home.gif' %}" media="(max-width:700px)"> -->
+            <img  class="picture-home"src="{% static 'invitados/img/foto_home.gif' %}" alt="">
+            <h4>
+                May 3, 2025 &middot; Shaveport, Lou, USA <br>
+                ¡Days To Go!
+            </h4>
+        </div>
+    </div>
 </body>
 {% endblock %}

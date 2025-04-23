@@ -63,13 +63,16 @@
 {% block content %}
 
 <body>
-    <section class="foto__section">
-    
+  
+<div class="home__picture">
+    <div class="picture-items" >
+        <!-- <source srcset="{% static 'invitados/img/foto_home.gif' %}" media="(max-width:700px)"> -->
+        <img  class="picture-home"src="{% static 'invitados/img/foto_home.gif' %}" alt="">
         <h4>
             May 3, 2025 &middot; Shaveport, Lou, USA <br>
             ¡Days To Go!
         </h4>
-    
+
         <div class="contenedor">
             <div class="contenedor--item">
                 <h5 class="date--item">Days</h5>
@@ -91,7 +94,13 @@
                 <div class="numbers" id="segundos"></div>
             </div>
         </div>
-    </section>
+    
+    </div>
+
+  
+</div>
+       
+
     <div class="nav-body">
 
     <ul class="nav-list-body"  id="miLista">
@@ -139,7 +148,12 @@ We are glad you are here, now: <br>
 
         </span>
         <P>
-            We appreciate you joining us on this journey. We are so excited to welcome our little one. We know we'll need many items as our daughter grows, but please feel free to bless her with whatever you wish. We appreciate your love and support. Love, Colby, Valentina, and Presley.</P>
+            We appreciate you joining us on this journey.
+           We are so excited to welcome our little one.
+            We know we'll need many items as our daughter grows, 
+            but please feel free to bless her with whatever you wish.
+             We appreciate your love and support. 
+             Love, Colby, Valentina, and Presley.</P>
 
 
     </div>

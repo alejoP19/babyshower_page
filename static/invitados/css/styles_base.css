@@ -3,7 +3,7 @@ body{
       margin: 0;
       font-family: 'Perpetua Titling MT';
       box-sizing: border-box;
-      background-color: #ffe3e3fa;
+      background-color: #fffffffa;;
      
      
 }
@@ -19,48 +19,43 @@ body{
 /*---------->HEADER SECTION <-----------*/
 
 .header{
-      position: fixed;
+      position:fixed;
       display: flex;
       flex-direction: row;
       justify-content:space-around;
       width: 100%;
-      height: 15dvh;
+      height: 12dvh;
       align-items: center;
       max-width: 100%;
       z-index: 20;
-      background-color: rgba(221, 197, 197, 0.74);
-        
+      top: 0;
+      background-color: rgba(255, 201, 232, 0.596);
     
   }
 .header img{
-     position: absolute;
-    margin: auto;
-    width:80%;
+      position: absolute;
+      margin: auto;
+      width:68%;
          
         }
 
 .header h3{
- position: absolute;
- margin: auto;
- width:80%;
+      position: absolute;
+      margin: auto;
+      width:80%;
  }
 
  .open_menu_button{
       position: absolute;
        color: rgb(255, 255, 255);
-      text-shadow: -2px 2px 2px #440375;
+      text-shadow: -1px 1px 2px #440375;
       font-weight: bold; 
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: lighter;
-   
       align-items: center;
       margin-left: 6%;
-     margin-bottom: 7%;
       left: 0;
-      width:14%;
-      height:14%;
     
-     
 
 }
 
@@ -84,41 +79,55 @@ body{
 
 
 
-/* --- FOTO SECTION --- */
-.foto__section{
+/* --- HOME PICTURE SECTION --- */
+.home__picture{
       position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      height: 100vh;
-      box-sizing: border-box;
-      background-image: url(../../invitados/img/brand.gif);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width:100%;
+        height: max-content;
+        top: 10;
+       
+   
+       
+  }
+  .picture-home{
+  margin-top: 15%;
+      width: 100%;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
-
-      z-index: 10;
+      background-position: center;  
+  }
   
-  
-}
-.foto__section h4{
-      margin-top: 70%;
-      text-align: center;
-      align-self: center;
-      color: rgb(255, 255, 255);
+  .picture-items{
+      position:relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      
     
-      font-weight: lighter;
-      font-family: 'Script MT';
-      font-size: clamp(1.6rem, 2.2vw, 2rem);
-      /* filter: drop-shadow(0px 0px 50px #ff03b3)
-      drop-shadow(0px 0px 5px #e02b8e); */
-      text-shadow: -3px 1px 3px #1b0119;
-
-}
-
-
-/* <---- FOTO SECTION  ENDS ----->*/
-/*__________________________________*/
+  }
+  
+  .picture-items h4{
+       position: absolute;
+        text-align: center;
+        align-self: center;
+        color: rgb(255, 255, 255);
+      margin-bottom: 12%;
+        font-weight: lighter;
+        font-family: 'Script MT';
+        font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+        /* filter: drop-shadow(0px 0px 50px #ff03b3)
+        drop-shadow(0px 0px 5px #e02b8e); */
+        text-shadow: -3px 1px 3px #1b0119;
+  
+  }
+  
+  
+  /* <---- FOTO SECTION  ENDS ----->*/
+  /*__________________________________*/
+  
 
 
 /* <---- NAV HDR SECTION ----->*/

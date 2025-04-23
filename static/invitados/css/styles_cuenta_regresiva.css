@@ -4,84 +4,86 @@
   padding: 0;
 }
 .contenedor {
-  position: absolute;
+
   display: flex;
   flex-direction: row;
   align-self: center;
-bottom: 0;
-  justify-items: center;
-  justify-content: space-around;
-
-  background-color: #c84afa5b;
-  box-shadow: 1px 0px 3px #47474781;
-  border-radius: 15px;
-  width: fit-content;
-  height: fit-content;
-  min-width: max-content;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(164, 54, 255, 0.849);
+  box-shadow: 1px 0px 3px #ffffff81;
+  width: 100%;
+  height: 20px;
   min-height: max-content;
-
   padding: 2px 2px  ;
-  gap: 0px;
+  gap: 0;
   margin: auto;
-  margin-bottom: 5%;
-  min-width: fit-content;
   text-align: center;
+
 }
 
 .contenedor--item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: max-content;
   height: max-content;
-  justify-content: center;
   min-width:100px;
-  min-height:100px;
-  padding: 5px 5px ;
-  text-align: center;
-  align-content: center;
+  min-height:50px;
+  padding: 3px 15px 3px 15px ;
+  gap:8px;
   margin: 5px;
+  outline: 1px solid #ff6abcd0;
   outline-offset: 1px solid #cfcfcfd0;
-  border-radius:50px;
-  color: rgba(253, 216, 52, 0.87);
+  border-radius:60px 40px 60px 40px;
+
 
 
 }
-
 .contenedor--item:hover{
-  padding: 8px 8px ;
+  padding: 1px 1px;
+  margin: 0;
   outline: 1px solid #cfcfcfd0;
-color: rgb(255, 255, 255);
-}
-.contenedor--item .date--item:hover{
-  font-size: clamp(1.5rem, 2.2vw, 2rem);
- 
-}
+   outline: 1px solid   rgba(164, 54, 255, 0.849);
+  color: rgb(0, 0, 0);
+  background-color: #ffffffd0;
+  }
+  
 
 .date--item {
-
-     filter: drop-shadow(5px 0px 50px #000000)
-    drop-shadow(1px 0px 3px #000000); 
-  text-shadow: -3px 1px 3px #9b02c9;
+    
+  text-shadow: -2px 1px 1px #000000;
    font-family: 'Pristina';
-
-   align-self: center;
+   color: rgba(253, 216, 52, 0.87);
+   font-size: clamp(1.8rem, 2.2vw, 2rem);
    font-weight: lighter;
-   padding: 0%;
+margin: 0;
+   padding: 0;
+   font-size: large;
 
  
 }
-.numbers{
-  align-self: center;
-  font-size: clamp(1.2rem, 2.2vw, 2rem);
-  margin: auto;
-  color: #ff008c;
-  text-shadow: -2px 1px 1px #000000;
-  font-weight: lighter; 
+.date--item:hover{
 
-  
+  text-shadow: -2px 1px 1px #ffffff;
+  font-size: clamp(1.2rem, 2.2vw, 2rem);
+  color: rgba(0, 0, 0, 0.87);
 }
 
-.numbers:hover{
-  font-size: clamp(1.5rem, 2.2vw, 2.5rem);
-  color: #ffffff;
+
+
+
+.numbers{
+  align-self: center;
+  font-size: clamp(0.9rem, 2.2vw, 1.5rem);
+  color: #ff008c;
+  text-shadow: -1px 1px 1px #000000;
+  font-weight: lighter; 
+
+
+
   
 }
 
