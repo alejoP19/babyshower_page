@@ -62,7 +62,7 @@
 
 {% block content %}
 
-<body>
+
   
 <div class="home__picture">
     <div class="picture-items" >
@@ -100,83 +100,70 @@
 </div>
        
 
-<div class="nav-body">
-    <ul class="nav-list-body"  id="miLista">
-        <li  class="nav-item-body" ><a href="{% url 'Home'%}" id="ir">Home</a></li>
-        <li  class="nav-item-body"><a href="{% url 'Registry'%}">Registry</a></li>
-        <li class="nav-item-body"><a href="#portfolio">RSVP</a></li>
-        <li class="nav-item-body"><a href="#contact">Photos</a></li>
-    </ul>
-</div>
-    
-    <main class="img-main">
-  <!-- <div class="parents-img">
-      <img  src="{% static 'invitados/img/new_parents.jpg' %}" alt="">    
-  </div> -->
-       
-  <div class="card">
 
-    <div class="card__front">
 
-            <picture class="sidebar__iconos sidebar--picture">
-                <source srcset="{% static 'invitados/img/new_parents.jpg' %}" media="(max-width:700px)">
 
-                <img src="{% static 'invitados/img/new_parents.jpg' %}" alt="">
-            </picture>
-           
-                <span>¡Hello Everyone!
-                </span>
-                <P>
-                  
-We are glad you are here, now: <br>
-                
-                </P>
-               <h4>Drag the cursor here</h4>
-               <div class="icon-card">
-
-               
-                   <i class="fa-regular fa-circle-up fa-beat-fade"></i>
-               </div>
+    <div class="nav-body">
+        <ul class="nav-list-body"  id="miLista">
+            <li  class="nav-item-body" ><a href="{% url 'Home'%}" id="ir">Home</a></li>
+            <li  class="nav-item-body"><a href="{% url 'Registry'%}">Registry</a></li>
+            <li class="nav-item-body"><a href="#portfolio">RSVP</a></li>
+            <li class="nav-item-body"><a href="#contact">Photos</a></li>
+        </ul>
     </div>
-    
-  
-    <div class="card__back">
-        <span>
-            Thank you for visiting our baby registry!
-
-        </span>
-        <P>
-            We appreciate you joining us on this journey.
-           We are so excited to welcome our little one.
-            We know we'll need many items as our daughter grows, 
-            but please feel free to bless her with whatever you wish.
-             We appreciate your love and support. 
-             Love, Colby, Valentina, and Presley.</P>
-
-
-    </div>
-</div>
 
 
 
-    </main>
-
-
-</body>
-<footer class="base__footer">
-
-    <div class="right_text__footer--base">
-        <font color="#7efc96"> &middot; </font> &nbsp;
-        <a href="#">Email</a>
-        <font color="#7efc96"> &middot; </font> &nbsp;
-        <a href="#" ;>Confirm Or Cancel</a>
-    </div>
-    <div class="left__text__footer--base">
-        <font color="#7efc96">  © </font>2025 Mario Alejandro Echeverry. All rights reserved.
+<body class="img-body-home">
+    <div class="card">
+        <div class="card__front">
+                <picture class="sidebar__iconos sidebar--picture">
+                    <source srcset="{% static 'invitados/img/new_parents.jpg' %}" media="(max-width:700px)">
+                    <img src="{% static 'invitados/img/new_parents.jpg' %}" alt="">
+                </picture>
+            
+                    <span>¡Hello Everyone!</span>
+                    <P>
+                        We are glad you are here, now: <br>
+                    </P>
+                    <h4>Drag the cursor here</h4>
+                    <div class="icon-card">
+                    <i class="fa-regular fa-circle-up fa-beat-fade"></i>
+                </div>
+        </div>
         
+    
+        <div class="card__back">
+            <span>
+                Thank you for visiting our baby registry!
+            </span>
+            <P>
+                We appreciate you joining us on this journey.
+                We are so excited to welcome our little one.
+                We know we'll need many items as our daughter grows, 
+                but please feel free to bless her with whatever you wish.
+                We appreciate your love and support. 
+                Love, Colby, Valentina, and Presley.
+            </P>
+        </div>
     </div>
+    
 
-</footer>
+    <footer class="base__footer">
+    
+        <div class="right_text__footer--base">
+            <font color="#7efc96"> &middot; </font> &nbsp;
+            <a href="#">Email</a>
+            <font color="#7efc96"> &middot; </font> &nbsp;
+            <a href="#" ;>Confirm Or Cancel</a>
+        </div>
+        <div class="left__text__footer--base">
+            <font color="#7efc96">  © </font>2025 Mario Alejandro Echeverry. All rights reserved.
+            
+        </div>
+    
+    </footer>
+</body>
 
 
 {% endblock %}

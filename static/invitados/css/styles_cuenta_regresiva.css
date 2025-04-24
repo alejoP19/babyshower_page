@@ -11,7 +11,7 @@ position: absolute;
   align-items: center;
   justify-content: center;
   bottom: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   background-color:transparent;
   box-shadow:-1px 0px 0.5px 2px #ff8dd981;
   width:fit-content;
@@ -92,6 +92,22 @@ margin: 0;
 
 
 
+/*----------> <<< QUERIES >>> <-----------*/
+  
+@media screen and (min-width: 700px){
+
+  .contenedor {
+   
+      margin-bottom: 13%;
+      
+    }
+    
+    
+}
+
+
+/* <---- H <<< QUERIES /ENDS >>> ----->*/
+/*________________________________________________________*/
 
 
 
