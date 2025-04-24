@@ -277,9 +277,11 @@ width: 100%;
       width: 40%;
       padding: 8px;
       border-bottom: 1px solid rgba(35, 31, 32, 45%);
-      border-radius: 20px;
-  transition: background-color 2s, border-radius 1s, outline 1s,
-    outline-offset 0.8s;
+     border-radius: 5px;
+     border-bottom-left-radius: 0%;
+     border-bottom-right-radius: 0;
+  transition: background-color 2s, border-radius 1s, outline 0.8s,
+    outline-offset 0.1s;
       outline: 1px;
       outline-offset: 0;
       list-style: none; 
@@ -291,11 +293,11 @@ width: 100%;
       
    
       border-radius: 25px;
-      background-color: #ffc6f6f1;
+      background-color: #e69ff8f1;
       border-radius: 23px;
       padding:10px 30px;
-      outline: 1px solid rgba(255, 0, 221, 0.959);
-  outline-offset: -7px;
+      outline: 1px solid rgb(255, 255, 255);
+  outline-offset: -3px;
             
       }
 

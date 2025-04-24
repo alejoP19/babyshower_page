@@ -101,20 +101,18 @@ margin-top: 15%;
 }
 
 .picture-items{
-    position:relative;
+      position: relative;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-    
-  
+      justify-content:center; 
 }
 
 .picture-items h4{
-     position: absolute;
+      position: absolute;
       text-align: center;
       align-self: center;
+    
       color: rgb(255, 255, 255);
-    margin-bottom: 25%;
       font-weight: lighter;
       font-family: 'Script MT';
       font-size: clamp(1.3rem, 2.2vw, 1.8rem);
@@ -182,7 +180,7 @@ list-style: none;
     width: 100%;
     padding: 8px;
     border-bottom: 1px solid rgba(35, 31, 32, 45%);
-    background-color:rgba(248, 177, 239, 0.849);
+    background-color: #e69ff8f1;
 list-style: none; 
 
       
@@ -192,7 +190,7 @@ list-style: none;
    
     padding: 10px;
     
-background-color: #ffa6f0f1;
+background-color: #f0f0f0;
       
 }
 
@@ -216,6 +214,7 @@ background-color: #ffa6f0f1;
       flex-direction: column;
       justify-content: space-evenly;
       height:110dvh;
+      width: 100%;
      
       box-sizing: border-box;
       background-image: url(../../invitados/img/main_home_img.jpg);
@@ -232,12 +231,12 @@ background-color: #ffa6f0f1;
     margin: auto;
       align-self: center;
       display: flex;
-      width: clamp(70dvw, 50%, 90dvw);
+      width: clamp(65dvw, 50%, 90dvw);
       height: clamp(max-content, 50%, 100dvh);
-      max-width: clamp(60dvw, 50%, 90dvw);
+      max-width: clamp(65dvw, 50%, 90dvw);
       min-height: clamp(max-content, 50%, 100dvh);
       max-height: clamp(max-content,50%, 100dvw);
-      margin-top: 4%;
+      margin-top: 7%;
       background-color:#ed7efc96;
       border-radius: 20px;
       overflow: hidden;
@@ -302,8 +301,7 @@ background-color: #ffa6f0f1;
     
       transform: perspective(200px)rotateY(0deg); 
       margin: 3px;
-      padding: 12px;
-      height: 40%;
+      padding: 5px;
       background-color: #ca90f7;
       border-radius: 20px;
   }
@@ -319,6 +317,7 @@ background-color: #ffa6f0f1;
       background-position:center ;
       border-radius: 20px;
       margin-bottom: 10%;
+      height:   48dvh;
     
   }
 
@@ -544,80 +543,289 @@ width: 100%;
    /*________________________________________________*/
 
   
-    /*----------> FOOTER / <<<  ENDS >>>  <-----------*/
-   /*________________________________________________*/
 
    
 
+                        /*----------> <<< QUERIES STYLES >>> <-----------*/
+                        /*______________________________________________/
+
+
+  
 /*----------> HEADER <<< QUERIES >>> <-----------*/
   
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
   
-.header{
-      height: 18dvh;
-    
-        
-    
-  }
   
-.header img{
+      .header
+      {
+        display: none;  
+      
+      } 
+        .open_menu_button
+      {
+        display: none;
+       }                 
+}
+
+ /*----------> HOME PICTURE <<< QUERIES >>> <-----------*/
   
- 
-    width:40%;
-         
+ @media screen and (min-width: 700px){
+
+      .home__picture{
+              top: 0;      
         }
+        .picture-home{
+           margin-top: 0%;
+           
+        }
+        
 
-.header h3{
- position: absolute;
- margin: auto;
- width:50%;
- }
-
- .open_menu_button{
-      position: absolute;
-       color: rgb(255, 255, 255);
-      text-shadow: -2px 2px 2px #440375;
-      font-weight: bold; 
-      font-size: 2rem;
-      font-weight: lighter;
-   
-      align-items: center;
-      margin-left: 6%;
-     margin-bottom: 7%;
-      left: 0;
-      width:14%;
-      height:14%;
-    
-     
-
+        .picture-items h4{
+           
+            margin-bottom: 20%;
+        }
+        
 }
 
-
-.logo-header{
-      position: absolute;
-      display: flex;
-      flex-direction: row;
-      top: 0;
-      right:0;
-   
-      max-width: 145px;
-      z-index: 20; 
-   
-}
-}
-
-
-
-/* <---- HEADER SECTION  ENDS ----->*/
-/*__________________________________*/
+/* <---- HEADER SECTION   << QUERIES / ENDS >>>  ----->*/
+/*____________________________________________________*/
 
             
-        
+/* <---- NAV BODY  SECTION <<< QUERIES >>>   ----->*/
+  
+    @media screen and (min-width: 700px){   
+.nav-body{
+      position: relative;
+  
+      height: 30%;
+      margin: 1px 1px;
+        width: 50%;
+    justify-self: center;
+}
+      .nav-list-body{
+            position: relative;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between; 
+            width: 100%;
+            font-family: 'Script MT';}
+
+      .nav-item-body{
+            text-align: center;
+      width: 40%;
+      padding: 8px;
+      border-bottom: 1px solid rgba(35, 31, 32, 45%);
+     border-radius: 5px;
+     border-bottom-left-radius: 0%;
+     border-bottom-right-radius: 0;
+  transition: background-color 2s, border-radius 1s, outline 0.8s,
+    outline-offset 0.1s;
+      outline: 1px;
+      outline-offset: 0;
+      list-style: none; 
+
+            
+      }
+
+      .nav-item-body:hover{
+      
+   
+      border-radius: 25px;
+      background-color: #e69ff8f1;
+      border-radius: 23px;
+      padding:10px 30px;
+      outline: 1px solid rgb(255, 255, 255);
+  outline-offset: -3px;
+            
+      }
+
+      .nav-item-body a{
+      color: #000000;
+      font-size: x-large;
+      font-weight: 600;   
+
+      }
+
+    }
+
+/* <---- NAV BODY SECTION  <<<< QUERIES / ENDS >>>>----->*/
+/*____________________________________________________*/
+    
        
   
-    /*----------> bar__header ENDS <-----------*/
-    /*-----------------------------------*/
+  /* <---- MAIN SECTION STYLES <<<< QUERIES >>>> ----->*/
+
+  @media screen and (min-width: 700px){   
+.img-main{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height:100dvh;
+     
+
+
+}
+
+.card{
+   
+      position: absolute;
+    margin: auto;
+      align-self: center;
+      display: flex;
+      width: clamp(70dvw, 50%, 90dvw);
+      height: clamp(max-content, 50%, 100dvh);
+      max-width: clamp(60dvw, 50%, 90dvw);
+      min-height: clamp(max-content, 50%, 100dvh);
+      max-height: clamp(max-content,50%, 100dvw);
+      margin-top: 4%;
+      background-color:#ed7efc96;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: -1px 1px 1px black;
+      
+  }
+  
+  .card__back{
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: 12px;
+      transform: perspective(900px)rotateY(180deg);
+      border-radius: 20px;
+      border: 1px dotted white;
+  }
+  
+  .card__back span{
+      text-align: center;
+      align-self: center;
+      font-size: clamp(1.5rem,2.2%, 2rem);
+      
+      margin: 6px 0;
+      
+  }
+  .card__back p{
+      align-self: center;
+      text-align: justify;
+      font-size: clamp(1.2rem,2.2%, 1.8rem);
+  text-wrap: wrap wrap;
+      margin: 6px 6px;
+      white-space:pre;
+      white-space:normal;   
+      text-align: justify;
     
+    
+   
+    
+  }
+  .card__back, .card__front{
+  backface-visibility: hidden;
+  transition: transform 3s;
+  background-color:#ca90f7;
+  border-radius: 20px;
+  padding-bottom:6px ;
+  }
+  
+  .card:hover .card__front{
+      transform: perspective(300px)rotateY(180deg);
+  }
+  .card:hover .card__back{
+      transform: perspective(300px)rotateY(360deg);
+      background-color: rgb(253, 22, 138);
+      color:#000000;
+  }
+  
+  .card__front{
+    
+      transform: perspective(200px)rotateY(0deg); 
+      margin: 3px;
+      padding: 12px;
+      height: 40%;
+      background-color: #ca90f7;
+      border-radius: 20px;
+  }
+  .card__front{
+     
+  height: fit-content;
+  background-color: #ff80d5;
+  }
+  .card__front img{
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size:  cover;
+      background-position:center ;
+      border-radius: 20px;
+      margin-bottom: 10%;
+    
+  }
+
+  .card__front span{
+    display: flex;
+    justify-self: center;
+    font-size: clamp(1.5rem,2.2%, 2rem);
+     color: rgb(50, 5, 68);
+     text-shadow: 1px 1px 1px #ffffff;
+     font-weight: bold;
+    
+  }
+  .card__front p{
+      display: flex;
+      justify-self: center;
+  
+     font-size: clamp(1rem,2.2%, 1.5rem);
+     margin: 0% 0% 7% 0%;
+     display: block;
+     color: rgb(0, 0, 0);
+   font-weight: 400;
+    
+  }
+  .card__front h4{
+      text-align: center;
+      display: flex;
+   align-self: center;
+  color: rgba(255, 255, 255, 0.959);
+  text-shadow: -1px 1px 1px #000000;
+  font-weight:600;
+background-color: #3ddb5aec;
+  padding: 8px 10px;
+  margin: 15px 10px;
+  border-radius: 8px;
+  transition: background-color 1s, border-radius 0.8s, outline 0.8s,
+    outline-offset 0.8s;
+    outline: 1px solid rgba(136, 55, 122, 0.829);
+  outline-offset: 2; 
+
+  }
+  .card__front h4:hover {
+      background-color: rgba(255, 138, 226, 0.178);
+      color: rgb(255, 0, 106);
+      border-radius: 20px;
+      padding: 15px;
+      outline: 2px solid rgba(253, 3, 3, 0.596);
+      outline-offset: -7px;
+    }
+    
+ 
+  
+  .icon-card{
+      display: flex;
+    justify-self: center;
+    font-size: 30px;
+    color: #3f0257;
+  }
+
+  
+}
+  
+  
+/* <---- MAIN SECTION  <<<< QUERIES / ENDS >>>>----->*/
+/*__________________________________*:________________/
+
+
     
 
         /*---------->  FOOTER- BASE/ <<<< QUERIES>>>>  <-----------*/
