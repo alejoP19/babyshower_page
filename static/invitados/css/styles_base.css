@@ -1,10 +1,10 @@
 body{
-      padding: 0;
+      position:relative;
       margin: 0;
-      font-family: 'Perpetua Titling MT';
+      padding: 0;
       box-sizing: border-box;
-      background-color: #fffffffa;;
-     
+      min-height: 100vh;
+      max-height: fit-content;
      
 }
 
@@ -71,57 +71,73 @@ body{
 /*__________________________________*/
 
 
+/* <---- TITULOS_PAGINAS STYLES ----->*/
+
+.titulo_registry{
+      display: flex;
+     justify-content: center;
+  
+     color: rgb(255, 255, 255);
+     text-shadow: -2px 2px 2px #440375;
+     font-weight: bold; 
+
+}
+
+/*----------> TITULOS_PAGINAS / <<<  ENDS >>>  <-----------*/
+/*________________________________________________*/
+
 
 
 /* --- HOME PICTURE SECTION --- */
-.home__picture{
+.base__picture{
       position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width:100%;
-        height: max-content;
-        top: 10;
-       
-   
-       
-  }
-  .picture-home{
-  margin-top: 15%;
-      width: 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;  
-  }
-  
-  .picture-items{
-      position:relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+      font-display: flex;
+      flex-direction: column;
+      justify-content: center;
       
-    
-  }
-  
-  .picture-items h4{
-       position: absolute;
-        text-align: center;
-        align-self: center;
-        color: rgb(255, 255, 255);
-      margin-bottom: 12%;
-        font-weight: lighter;
-        font-family: 'Script MT';
-        font-size: clamp(1.3rem, 2.2vw, 1.8rem);
-        /* filter: drop-shadow(0px 0px 50px #ff03b3)
-        drop-shadow(0px 0px 5px #e02b8e); */
-        text-shadow: -3px 1px 3px #1b0119;
-  
-  }
-  
-  
-  /* <---- FOTO SECTION  ENDS ----->*/
-  /*__________________________________*/
-  
+         
+      }
+      .base__picture .items img
+      {
+      position: relative;
+      margin-top: 15%;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center 
+      }
+      
+      
+      
+       .title{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            text-align: center;
+            align-self: center;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            top: 32%;
+            margin: auto;
+            z-index: 10;
+      
+            color: rgb(255, 255, 255);
+            font-weight: lighter;
+            font-family: 'Script MT';
+            font-size: clamp(1.2rem, 2.2vw, 1.8rem);
+            /* filter: drop-shadow(0px 0px 50px #ff03b3)
+            drop-shadow(0px 0px 5px #e02b8e); */
+            text-shadow: -3px 1px 3px #1b0119;
+      
+      }
+      
+      
+      /* <---- HOME PICTURE SECTION  ENDS ----->*/
+      /*__________________________________*/
 
 
 /* <---- NAV HDR SECTION ----->*/
@@ -157,7 +173,136 @@ list-style: none;
 /*__________________________________*/
 
 
-/* <---- CHECKBOX SECTION STYLES ----->*/
+
+  
+/* <---- MAIN SECTION STYLES ----->*/
+.img-body-home{
+      position: absolute;
+      background-image: url(../../invitados/img/main_home_img.jpg);
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      height: 100%;
+      width: 100%
+      }
+      
+      
+ /* <---- NAV BODY  SECTION  ----->*/
+      
+.nav-body{
+      display: flex;
+      top: 0;
+      flex-direction: column;
+      justify-content: center; 
+      align-content: center;
+      text-align: center;
+      font-family: 'Script MT';
+            width: 100%;
+      padding: 0px 0;         
+}
+
+
+
+.nav-item-body{
+      text-align: center;
+      width: 100%;
+      padding: 8px;
+      border-bottom: 1px solid rgba(35, 31, 32, 45%);
+      background-color: #e69ff8f1;
+      list-style: none; 
+
+      
+}
+
+.nav-item-body:hover{
+      
+      padding: 10px;
+      
+      background-color: #f0f0f0;
+      
+}
+
+.nav-item-body a{
+      color: #000000;
+      font-size: x-large;
+      font-weight: 600;   
+
+}
+
+/* <---- NAV BODY SECTION  ENDS ----->*/
+/*__________________________________*/
+
+
+
+/*----------> FOOTER  / <<<<  BASE>>>>  <-----------*/
+
+.base__footer {
+   position:absolute;
+      display: flex;
+      flex-direction: column;
+      bottom: 0;
+      font-family: 'Verdana';
+      background-color: rgba(75, 9, 85, 0.74);
+      margin-top: 5%;
+      justify-content: center;
+      align-content: center;
+      height: fit-content;
+      width: 100%;
+      font-size: clamp(0.7rem, 2.0vw, 1rem);
+      padding: 10px 0px 30px 0px;
+    
+         
+    }
+      
+      
+      
+      .left__text__footer--base {
+        margin-top:-30px;
+        margin-bottom: 3%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-self: center;
+        color: rgb(255, 187, 227);
+        letter-spacing: 0.5px;
+       word-spacing: 1px;
+       gap: 4px;
+       
+      }
+      .left__text__footer--base:hover{
+        color: rgba(255, 255, 255, 0.952);
+      }
+ 
+      .right_text__footer--base {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 5px;
+        margin: auto;
+        padding: 30px 0px;
+      
+     
+      
+        color: rgba(136, 255, 235, 0.959);
+        margin-bottom: 2%;
+      }
+      .right_text__footer--base a {
+      
+            color: #7efc96;
+            margin-bottom: 2%;
+          }
+      .right_text__footer--base a:hover {
+    
+        color: rgba(5, 255, 193, 0.959);
+      }
+    /*----------> FOOTER / <<<  ENDS >>>  <-----------*/
+   /*________________________________________________*/
+
+
+/* <---- CHECKBOX SECTION  BASE STYLES ----->*/
 
 .header__checkbox{
       display: none;     
@@ -242,169 +387,35 @@ width: 100%;
 }
 
 
-.header:has(input[type="checkbox"]:checked) h4,
-.header:has(input[type="checkbox"]:checked) .contenedor,
-.header:has(input[type="checkbox"]:checked) .titulo_registry{
+.header:has(input[type="checkbox"]:checked) .titulo_registry
+
+{
+      display: none;
+}
+.header:has(input[type="checkbox"]:checked).contenedor
+
+{
       display: none;
 }
 
 
-
-/* <---- CHECKBOX SECTION STYLES ENDS ----->*/
-/*__________________________________*/
-
-
-/* <---- NAV BODY  SECTION  ----->*/
-  
-.nav-body{
-      position: relative;
-  
-      height: 30%;
-      margin: 1px 1px;
-        width: 50%;
-    justify-self: center;
-}
-      .nav-list-body{
-            position: relative;
-            display: flex;
-            flex-direction:row;
-            justify-content: space-between; 
-            width: 100%;
-            font-family: 'Script MT';}
-
-      .nav-item-body{
-            text-align: center;
-      width: 40%;
-      padding: 8px;
-      border-bottom: 1px solid rgba(35, 31, 32, 45%);
-     border-radius: 5px;
-     border-bottom-left-radius: 0%;
-     border-bottom-right-radius: 0;
-  transition: background-color 2s, border-radius 1s, outline 0.8s,
-    outline-offset 0.1s;
-      outline: 1px;
-      outline-offset: 0;
-      list-style: none; 
-
-            
-      }
-
-      .nav-item-body:hover{
-      
-   
-      border-radius: 25px;
-      background-color: #e69ff8f1;
-      border-radius: 23px;
-      padding:10px 30px;
-      outline: 1px solid rgb(255, 255, 255);
-  outline-offset: -3px;
-            
-      }
-
-      .nav-item-body a{
-      color: #000000;
-      font-size: x-large;
-      font-weight: 600;   
-
-      }
-
-
-
-      
-
-/* <---- NAV BODY SECTION  ENDS ----->*/
+/* <---- CHECKBOX SECTION  BASE STYLES ENDS ----->*/
 /*__________________________________*/
 
 
 
-/*----------> FOOTER  / <<<<  BASE>>>>  <-----------*/
 
-.base__footer {
-      position:absolute;
-      display: flex;
-      align-self: flex-end;
-      flex-direction: column;
-      background-color: rgba(44, 18, 48, 0.74);
-      margin-top: 5%;
-      justify-content: center;
-      align-content: center;
-      height: fit-content;
-      width: 100%;
-   
-      font-size: clamp(0.7rem, 2.0vw, 1rem);
-      padding: 10px 0px 30px 0px;
-         
-    }
-      
-      
-      
-      .left__text__footer--base {
-        margin-top:-30px;
-        margin-bottom: 3%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        align-self: center;
-        color: rgb(243, 223, 255);
-        letter-spacing: 0.5px;
-       word-spacing: 1px;
-       gap: 4px;
-       
-      }
-      .left__text__footer--base:hover{
-        color: rgba(255, 255, 255, 0.952);
-      }
- 
-      .right_text__footer--base {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 5px;
-        margin: auto;
-        padding: 30px 0px;
-      
-     
-      
-        color: rgba(136, 255, 235, 0.959);
-        margin-bottom: 2%;
-      }
-      .right_text__footer--base a {
-      
-            color: #7efc96;
-            margin-bottom: 2%;
-          }
-      .right_text__footer--base a:hover {
-    
-        color: rgba(5, 255, 193, 0.959);
-      }
-  
-    /*----------> FOOTER / <<<  ENDS >>>  <-----------*/
-   /*________________________________________________*/
 
  
 
 
-/* <---- TITULOS_PAGINAS STYLES ----->*/
-
-.titulo_registry{
-      display: flex;
-     justify-content: center;
-  
-     color: rgb(255, 255, 255);
-     text-shadow: -2px 2px 2px #440375;
-     font-weight: bold; 
-
-}
-
-/*----------> TITULOS_PAGINAS / <<<  ENDS >>>  <-----------*/
-/*________________________________________________*/
 
 
 
 
 
-/*-----------------> <<< QUERIES STYLES >>> <-------------------*/
-/* ____________________________________________________________*/
+           /*----------> <<< QUERIES BASE STYLES >>> <-----------*/
+          /*______________________________________________/
 
 
 /*----------> HEADER <<< QUERIES >>> <-----------*/
@@ -438,111 +449,196 @@ width: 100%;
       
       
       
-    /*----------> HOME PICTURE <<< QUERIES >>> <-----------*/
+   /*----------> HOME PICTURE <<< QUERIES >>> <-----------*/
   
-@media screen and (min-width: 700px){
+ @media screen and (min-width: 700px){
 
-      .home__picture{
-              top: 0;      
-        }
-        .picture-home{
-           margin-top: 0%;
-           
-        }
-        
-
-        .picture-items h4{
-           
-            margin-bottom: 20%;
-        }
-        
-}
-
-
-  /*----------> HEADER <<< QUERIES / ENDS >>> <-----------*/
-      /*_________________________________________________________*/
-            
-        
+      /* --- HOME PICTURE SECTION --- */
+ 
+       .home__picture .items img
+       {
+      
+      margin-top: 0;
        
-  
-    /*----------> bar__header ENDS <-----------*/
-    /*-----------------------------------*/
-    
-    
-
-        /*---------->  FOOTER- BASE/ <<<< QUERIES>>>>  <-----------*/
-
-
-        @media screen and (min-width: 620px) { 
-        .base__footer{
-      height: 12dvh;
-      margin-top: 5%;
-      }
-      
-      .left__text__footer--base {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-       margin-left: 50px;
-      }
-      
-      .left__text__footer--base:hover{
-        color: rgba(20, 214, 101, 0.952);
-      }
-              
-      .right_text__footer--base {
-        margin-top: 12px;
-      display: flex;
-      align-items: center;
-      
-      }
-          
-      }
-/*----------> HEADER QUERIES <-----------*/
-
-@container header (min-width: 600px){
-      .nav_hdr{
-            margin-top: 0;
-            display: block;
-            position: static;
-            z-index: 1;
-            background-color: transparent;
-            height: auto;
-            width: auto;
-            justify-content: space-between;  
-          
-      }
-      .nav_hdr-item a{
-            color: rgb(1, 142, 207); 
-            font-size: large;
-            font-weight: 400;
-      }
-
-      .nav_hdr-list {
-            flex-direction: row;
-            height: auto;
-            width: auto;
-            gap: 20px;
-            margin-right: 40px;
+       }
+       
+        .title{
+             
+             top: 10%;
+            
+       }
+       
+       
+       /* <---- HOME PICTURE SECTION  ENDS ----->*/
+       /*__________________________________*/
+       
+         
+ }
+ 
+ 
+   /* <---- HOME PICTURE SECTION  <<< QUERIES /ENDS >>> ----->*/
+   /*________________________________________________________*/
+   
+             
+ /* <---- NAV BODY  SECTION <<< QUERIES >>>   ----->*/
+   
+     @media screen and (min-width: 700px){   
+ .nav-body{
+ 
+       background:none;
+       margin-top: 1%;
+ }
+ .nav-list-body{
+       margin: auto;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       width: 50%;
+       padding: 8px 15px;
+       border-radius: 15px;   
+ }
+ 
+ .nav-item-body{
+       background: #ffffffe0;
+       width: 40%;
+       padding: 8px ;
+       border-bottom: 1px solid rgba(255, 4, 67, 0.76);
+       border-radius: 15px;
+       transition: background-color 1s, border-radius 0.8s, outline 0.8s,
+       outline-offset 0.1s;
+       outline: 1px;
+       outline-offset: 0;
+       list-style: none; 
+ 
+             
+       }
+ 
+       .nav-item-body:hover{
+       background-color: #ffcee7f1;
+       border-radius: 23px;
+       padding:6px 20px;
+       outline: 1px solid rgb(255, 255, 255);
+      outline-offset: -4px;
+       }
+ 
+       .nav-item-body a{
+       color: #ff0077;
+       font-size:larger;
+       font-weight:bold;   
+ 
+       }
+       .nav-item-body a:hover{
            
+             color: #000000;
            
-      }
-      .header__open-nav-button{
-            display: none;
-       } 
+       
+             }
+ 
+     }
+ 
+ /* <---- NAV BODY SECTION  <<<< QUERIES / ENDS >>>>----->*/
+ /*____________________________________________________*/
      
-          
-      }
-/*----------> HEADER ENDS <-----------*/
-/*-----------------------------------*/
-
-
-
-
-
-
-
-
-
-/* --- NAVBAR SECTION --- */
-
+        
+   
+   /* <---- MAIN SECTION STYLES <<<< QUERIES >>>> ----->*/
+ 
+   @media screen and (min-width: 700px){   
+ 
+       .card{
+ 
+            
+             margin-top: 5%;
+             width: clamp(63dvw, 50%, 90dvw);
+             height: clamp(max-content, 50%, 100dvh);
+             width: clamp(200px,100%, 330px);
+             border-radius: 20px;
+             overflow: hidden;
+             box-shadow: -1px 1px 1px black;
+            
+             
+         }
+ }
+   
+   
+ /* <---- MAIN SECTION  <<<< QUERIES / ENDS >>>>----->*/
+ /*__________________________________*:________________/
+ 
+ 
+     
+ 
+  /*---------->  FOOTER- BASE/ <<<< QUERIES>>>>  <-----------*/
+ 
+ 
+         @media screen and (min-width: 700px) { 
+        
+             .base__footer {
+                
+                   font-size: clamp(0.7rem, 2.0vw, 0.9rem);
+                   padding: 3px 0px 3px 0px;
+                      
+                 }
+                   
+                   
+                   
+                   .left__text__footer--base {
+                     margin-top:-50px;
+                     margin-bottom: 2%;
+                     display: flex;
+                     flex-direction: row;
+                     align-items: center;
+                     align-self: center;
+                     color: rgb(255, 187, 227);
+                     letter-spacing: 0.5px;
+                    word-spacing: 1px;
+                    gap: 6px;
+                    
+                   }
+                   .left__text__footer--base:hover{
+                     color: rgba(255, 255, 255, 0.952);
+                   }
+              
+                   .right_text__footer--base {
+                     display: flex;
+                     flex-direction: row;
+                     justify-content: space-around;
+                     gap: 5px;
+                     margin: auto;
+                     padding: 20px 0px;
+                     margin-top: 1%;
+                   
+                  
+                   
+                     color: rgba(136, 255, 235, 0.959);
+                     margin-bottom: 2%;
+                   }
+                   .right_text__footer--base a {
+                   
+                         color: #7efc96;
+                         margin-bottom: 2%;
+                       }
+                   .right_text__footer--base a:hover {
+                 
+                     color: rgba(5, 255, 193, 0.959);
+                   }
+               
+                 /*----------> FOOTER / <<<  ENDS >>>  <-----------*/
+                /*________________________________________________*/
+             
+               
+           
+       }
+ 
+ /*----------> <<<< QUERIES / ENDS >>>>  <-----------*/
+ /*--------------------------------------------------*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -4,24 +4,30 @@
   padding: 0;
 }
 .contenedor {
-position: absolute;
+  position: absolute;
   display: flex;
-  flex-direction: row;
-  align-self: center;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  align-self: center;
+  right: 0;
   bottom: 0;
-  margin-bottom: 10px;
+  left: 0;
+  top: 75%;
+  margin: auto;
+
+   
+ 
+
   background-color:transparent;
   box-shadow:-1px 0px 0.5px 2px #ff8dd981;
   width:fit-content;
-  height: 20px;
+  height: 18px;
   min-height: max-content;
-  padding: 8px 10px  ;
+  padding: 6px 8px;
   border-radius:60px 40px 60px 40px;
   gap: 0;
- 
-  text-align: center;
 
 }
 
@@ -71,7 +77,6 @@ margin: 0;
 .date--item:hover{
 
   text-shadow: -2px 1px 1px #ffffff;
-  font-size: clamp(1.2rem, 2.2vw, 2rem);
   color: rgba(0, 0, 0, 0.87);
 }
 

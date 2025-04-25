@@ -13,7 +13,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>{% block titulo %} {% endblock %}</title>
+    <title>Home</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="{% static 'invitados/css/styles_nav_home.css' %}">
     <link rel="stylesheet" href="{% static 'invitados/css/styles_cuenta_regresiva.css' %}">
     <script src="{% static 'invitados/js/cuenta_regresiva.js' %}"></script>
-    <script src="{% static 'invitados/js/click_etiqueta_li.js' %}"></script>
+  
 
 
 
@@ -60,20 +60,17 @@
 
 </header>
 
-{% block content %}
+
 
 
   
 <div class="home__picture">
-    <div class="picture-items" >
-        <!-- <source srcset="{% static 'invitados/img/foto_home.gif' %}" media="(max-width:700px)"> -->
-        <img  class="picture-home"src="{% static 'invitados/img/foto_home.gif' %}" alt="">
-        <h4>
-            May 3, 2025 &middot; Shaveport, Lou, USA <br>
-            ¡Days To Go!
-        </h4>
-
-        
+   <div class="home__picture items">
+       <h4 class="title">
+           May 3, 2025 &middot; Shaveport, Lou, USA <br>
+           ¡Days To Go!
+       </h4>
+        <img  src="{% static 'invitados/img/foto_home.gif' %}" alt="">
         <div class="contenedor">
             <div class="contenedor--item">
                 <h5 class="date--item">Days</h5>
@@ -95,22 +92,18 @@
                 <div class="numbers" id="segundos"></div>
             </div>
         </div>
-    </div>
-
+   </div>
 </div>
+</div>
+<div class="nav-body">
+    <ul class="nav-list-body"  id="miLista">
+        <li  class="nav-item-body" ><a href="{% url 'Home'%}" id="ir">Home</a></li>
+        <li  class="nav-item-body"><a href="{% url 'Registry'%}">Registry</a></li>
+        <li class="nav-item-body"><a href="#portfolio">RSVP</a></li>
+        <li class="nav-item-body"><a href="#contact">Photos</a></li>
+    </ul>
        
 
-
-
-
-    <div class="nav-body">
-        <ul class="nav-list-body"  id="miLista">
-            <li  class="nav-item-body" ><a href="{% url 'Home'%}" id="ir">Home</a></li>
-            <li  class="nav-item-body"><a href="{% url 'Registry'%}">Registry</a></li>
-            <li class="nav-item-body"><a href="#portfolio">RSVP</a></li>
-            <li class="nav-item-body"><a href="#contact">Photos</a></li>
-        </ul>
-    </div>
 
 
 
@@ -166,6 +159,6 @@
 </body>
 
 
-{% endblock %}
+
 </html>
 
