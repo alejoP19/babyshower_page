@@ -1,0 +1,93 @@
+body{
+    position:relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    max-height: fit-content;
+}
+body,div{
+    box-sizing: border-box;
+}
+
+.registry_img{
+    position: absolute;
+    background-image: url(../../invitados/img/registry_img.avif);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%
+    }
+    
+ 
+.grid{
+  
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: repeat(1, 70px) ;
+    
+    grid-auto-flow: row;
+    grid-auto-columns:  minmax(1fr,1fr); 
+  
+    margin: auto;
+    padding: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    background-color: rgba(255, 152, 195, 0.932);
+    box-shadow: -1px 0px  3px rgb(158, 114, 184);
+    border-radius: 2px;
+    width: 88%;
+    min-width: clamp(80%, 2.2dvw,90%); 
+    max-width: clamp(fit-content, 2.2dvw,fit-content); 
+    font-size: clamp(0.8rem, 2.2vw, 1rem);  
+    
+    
+    margin-top: 10%;
+    padding: 15px;
+    gap: 15px;
+  
+
+ 
+}
+
+.grid :first-child{
+    grid-column: 1/span 2;
+    grid-row: 1/span 1; 
+  justify-self: center;
+  align-self: center;
+  color: rgb(255, 255, 255);
+  text-shadow: -2px 1px 1px #270442;
+  font-weight: bold; 
+  font-family: 'Verdana';
+ 
+
+}
+.grid-item{
+    background-color: rgb(236, 235, 236);
+    box-shadow: 0px 0px  3px rgb(222, 84, 250);
+    font-size: 30px;
+    border-radius: 4px;
+    color: aliceblue;
+    min-height: 170px;
+    min-width: 160px;
+    
+   
+}
+
+
+.grid-item:hover{
+  opacity: 1;
+    box-shadow: 0px 0px  3px rgb(142, 44, 161);
+}
+
+
+/* NOTA: Si vamos ausar el   grid-column-start: 2 y el grid-column-end: span 2;
+o el grid-row-start: 2 y el  grid-row-end: span 1; y vamos a introducir
+imagenes, se deben poner las imagenes dentro de un (div) para q ue al
+cambiar la extensión de las columnas o fiulas no se desbarate el grid y toque corregirlo
+de forma manual y se haga automaticamante */

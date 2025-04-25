@@ -243,10 +243,10 @@ list-style: none;
    position:absolute;
       display: flex;
       flex-direction: column;
-      bottom: 0;
+     
       font-family: 'Verdana';
       background-color: rgba(75, 9, 85, 0.74);
-      margin-top: 5%;
+      margin-top: 10%;
       justify-content: center;
       align-content: center;
       height: fit-content;
@@ -455,7 +455,7 @@ width: 100%;
 
       /* --- HOME PICTURE SECTION --- */
  
-       .home__picture .items img
+       .base__picture .items img
        {
       
       margin-top: 0;
