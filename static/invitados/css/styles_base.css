@@ -29,7 +29,7 @@ body{
       max-width: 100%;
       z-index: 20;
       top: 0;
-      background-color: rgba(255, 201, 232, 0.596);
+      background-color: rgba(255, 201, 232, 0.938);
     
   }
 
@@ -484,9 +484,15 @@ width: 100%;
    
      @media screen and (min-width: 700px){   
  .nav-body{
- 
+       position:absolute;
+       display:flex;
+
        background:none;
-       margin-top: 1%;
+ align-self: flex-end;
+       bottom: 0;
+      
+       box-shadow: 1px 2px 1px rgb(223, 137, 201);
+  
  }
  .nav-list-body{
        margin: auto;
@@ -495,15 +501,16 @@ width: 100%;
        justify-content: center;
        width: 50%;
        padding: 8px 15px;
-       border-radius: 15px;   
+       border-radius: 15px; 
+       margin-bottom: 1%;  
  }
  
  .nav-item-body{
-       background: #ffffffe0;
+       background: transparent;
        width: 40%;
        padding: 8px ;
-       border-bottom: 1px solid rgba(255, 4, 67, 0.76);
-       border-radius: 15px;
+       border-bottom:1px solid rgba(255, 255, 255, 0.76);
+
        transition: background-color 1s, border-radius 0.8s, outline 0.8s,
        outline-offset 0.1s;
        outline: 1px;
@@ -514,25 +521,23 @@ width: 100%;
        }
  
        .nav-item-body:hover{
-       background-color: #ffcee7f1;
+       background-color: #ff1a8d8f;
        border-radius: 23px;
        padding:6px 20px;
        outline: 1px solid rgb(255, 255, 255);
       outline-offset: -4px;
+      color: #000000;
        }
  
        .nav-item-body a{
-       color: #ff0077;
-       font-size:larger;
+       color: #dfdfdf;
+       text-shadow: -1px 1px 1px black;
+       font-size:22px;
        font-weight:bold;   
  
        }
-       .nav-item-body a:hover{
-           
-             color: #000000;
-           
-       
-             }
+     
+    
  
      }
  

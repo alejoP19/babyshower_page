@@ -1,0 +1,40 @@
+{% extends "paginas/base.html" %}
+{% load static %}
+
+
+
+{% block titulo_pagina %}
+
+<h3 class="titulo_registry">RSVP</h3>
+
+{% endblock %}          
+
+{% block content %}
+
+<body class="rsvp__img">
+    <img class="rsvp__invitation" src="{% static 'invitados/img/invit_transparent.png' %}" alt="">
+   
+    <form>
+          <h2>
+            Assistance Form</h2>
+          <fieldset>
+                <legend>Guest Information</legend>
+                <input id="nombre" type="text" placeholder="Enter your names">
+                <input id="nombre" type="text" placeholder="Enter your last name">   
+          </fieldset>
+          
+<fieldset>
+    <legend>Number of Companions</legend>
+    <input type="number" placeholder="Choose quantity">
+</fieldset>
+    </form>
+
+</body>
+
+  
+
+
+  
+ 
+
+{% endblock %}

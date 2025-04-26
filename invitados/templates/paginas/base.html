@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="{% static 'invitados/css/styles_base.css' %}">
     <link rel="stylesheet" href="{% static 'invitados/css/styles_cuenta_regresiva.css' %}">
     <link rel="stylesheet" href="{% static 'invitados/css/styles_registry.css' %}">
+    <link rel="stylesheet" href="{% static 'invitados/css/styles_rsvp.css' %}">
     
     <script src="{% static 'invitados/js/cuenta_regresiva.js' %}"></script>
 
@@ -46,7 +47,7 @@
         <ul class="nav_hdr">
             <li class="nav_hdr-item"><a href="{% url 'Home' %}">Home</a></li>
             <li class="nav_hdr-item"><a href="{% url 'Registry'%}">Registry</a></li>
-            <li class="nav_hdr-item"><a href="#portfolio">RSVP</a></li>
+            <li class="nav_hdr-item"><a href="{% url 'Rsvp'%}">RSVP</a></li>
             <li class="nav_hdr-item"><a href="#contact">Photos</a></li>
         </ul>
     </div>
@@ -82,15 +83,15 @@
             </div>
         </div>
     </div>
+    <div class="nav-body">
+        <ul class="nav-list-body" id="miLista">
+            <li class="nav-item-body"><a href="{% url 'Home'%}" id="ir">Home</a></li>
+            <li class="nav-item-body"><a href="{% url 'Registry'%}">Registry</a></li>
+            <li class="nav-item-body"><a href="#contact">Photos</a></li>
+            <li class="nav-item-body"><a href="{% url 'Rsvp'%}">RSVP</a></li>
+        </ul>
+    </div>
 
-</div>
-<div class="nav-body">
-    <ul class="nav-list-body" id="miLista">
-        <li class="nav-item-body"><a href="{% url 'Home'%}" id="ir">Home</a></li>
-        <li class="nav-item-body"><a href="{% url 'Registry'%}">Registry</a></li>
-        <li class="nav-item-body"><a href="#portfolio">RSVP</a></li>
-        <li class="nav-item-body"><a href="#contact">Photos</a></li>
-    </ul>
 </div>
 
     {% block content %}

@@ -10,13 +10,8 @@ urlpatterns = [
 
 path('home', views.home, name="Home"),
 path('registry/', views.registry, name="Registry"),
-# path('menu_principal/', views.menu_principal, name="MenuPrincipal"),
+path('rsvp/', views.rsvp, name="Rsvp"),
+
 path('base/', views.base, name="Base"),
-
-# path('', include('usuarios.urls')),
-
-
-
-
 ]
 
