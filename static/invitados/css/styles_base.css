@@ -150,7 +150,7 @@ body{
          align-content: center;
          text-align: center;
          font-family: 'Script MT';
-          width: 100%;
+         width: 100%;
         padding: 20px 0;
          
          
@@ -200,7 +200,7 @@ list-style: none;
       align-content: center;
       text-align: center;
       font-family: 'Script MT';
-            width: 100%;
+      width: 100%;
       padding: 0px 0;         
 }
 
@@ -268,8 +268,8 @@ list-style: none;
         align-self: center;
         color: rgb(255, 187, 227);
         letter-spacing: 0.5px;
-       word-spacing: 1px;
-       gap: 4px;
+        word-spacing: 1px;
+        gap: 4px;
        
       }
       .left__text__footer--base:hover{
@@ -334,7 +334,6 @@ width: 100%;
 
 .header:has(input[type="checkbox"]:checked).header .nav_hdr{
      
-       
          flex-direction: column;
          justify-self: center;
           width: max-content;

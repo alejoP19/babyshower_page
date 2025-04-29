@@ -73,7 +73,7 @@ body,div{
     display: flex;
     flex-direction: column;
   
-    background-color: rgb(255, 253, 255);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px  3px rgb(255, 147, 219);
     font-size: 30px;
     border-radius: 4px;
@@ -86,7 +86,7 @@ body,div{
 
 
 .grid-item:hover{
-  opacity: 2;
+  opacity: 1;
     box-shadow: 0px 0px  3px rgb(163, 163, 163);
 }
 
@@ -124,7 +124,7 @@ body,div{
     margin-bottom: 10%;
     border:0.5px solid black ;
    
- justify-self: flex-end;
+    justify-self: flex-end;
     background-color: #ffffff;
     color: rgba(0, 0, 0, 0.888);
     text-shadow: -1px 1px 1px #ffffff;
@@ -170,8 +170,8 @@ body,div{
         width: 30%;
         min-width: clamp(30%, 2.2dvw,70%); 
         max-width: clamp(fit-content, 2.2dvw,fit-content); 
-        font-size: clamp(0.8rem, 2.2vw, 1rem);  
-        margin-top: 5%;
+        font-size: clamp(0.8rem, 2.2vw, 0.9rem);  
+        margin-top: 8%;
       
       
     
