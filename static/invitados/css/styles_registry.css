@@ -25,10 +25,10 @@ body,div{
     
  
 .grid{
-  
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(2, 3fr);
-    grid-template-rows: repeat(1, 70px) ;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(1, 2fr) ;
     
     grid-auto-flow: row;
     grid-auto-columns:  minmax(1fr,1fr); 
@@ -38,7 +38,7 @@ body,div{
     border-top: 1px solid rgba(0, 0, 0, 0.377);
         border-bottom: 1px solid rgba(0, 0, 0, 0.377);
 
-    background-color: rgba(252, 187, 214, 0.93);
+    background-color: rgba(255, 198, 222, 0.93);
     box-shadow: -1px 0px  3px rgb(158, 114, 184);
     border-radius: 2px;
     width: 88%;
@@ -55,7 +55,8 @@ body,div{
  
 }
 
-.grid :first-child{
+.grid :first-child
+{
     grid-column: 1/span 2;
     grid-row: 1/span 1; 
   justify-self: center;
@@ -68,8 +69,12 @@ body,div{
 
 }
 .grid-item{
-    background-color: rgb(236, 235, 236);
-    box-shadow: 0px 0px  3px rgb(222, 84, 250);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  
+    background-color: rgb(255, 253, 255);
+    box-shadow: 0px 0px  3px rgb(255, 147, 219);
     font-size: 30px;
     border-radius: 4px;
     color: aliceblue;
@@ -81,47 +86,93 @@ body,div{
 
 
 .grid-item:hover{
-  opacity: 1;
-    box-shadow: 0px 0px  3px rgb(142, 44, 161);
+  opacity: 2;
+    box-shadow: 0px 0px  3px rgb(163, 163, 163);
 }
 
 
-/* NOTA: Si vamos ausar el   grid-column-start: 2 y el grid-column-end: span 2;
-o el grid-row-start: 2 y el  grid-row-end: span 1; y vamos a introducir
-imagenes, se deben poner las imagenes dentro de un (div) para q ue al
-cambiar la extensión de las columnas o fiulas no se desbarate el grid y toque corregirlo
-de forma manual y se haga automaticamante */
+.grid-item img{
+   
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+ 
+}
 
- /* <---- NAV BODY  SECTION <<< QUERIES >>>   ----->*/
+
+.grid-item:last-child img{
+   
+    height: 80%;
+    width: 100%;
+    padding: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+ 
+}
+
+
+/*---------->  <<<SHOP BOTON >>> <-----------*/
+
+.shop_button {
+    position: absolute;
+    align-self: center;
+    bottom: 0;
+    margin-bottom: 10%;
+    border:0.5px solid black ;
+   
+ justify-self: flex-end;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.888);
+    text-shadow: -1px 1px 1px #ffffff;
+    font-weight:600;
+    text-decoration: none;
+    padding: 3px;
+    align-items: center;
+    border-radius: 15px;
+    outline: 0;
+    font-size: 13px;
+    text-align: center;
+    width: 80%;
+    transition: background-color 1s, border-radius 0.8s, outline 0.7s,
+    outline-offset 0.5s;
+  }
+  .shop_button:hover {
+    background-color: rgba(255, 184, 240, 0.904);
+    outline: 1px solid rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-shadow: -1px 1px 1px #ffffff;
+    border-radius: 25px;
+    box-shadow: 0px 0px  10px rgb(255, 188, 219);
+    font-weight: 600;
+    padding: 2px;
+  } 
+  
+   /*----------> SHOP BOTON / <<<  ENDS >>>  <-----------*/
+   /*________________________________________________*/
+  
+
+
+                /*----------> <<< QUERIES REGISTRY STYLES >>> <-----------*/
+                /*______________________________________________/
+
+
+
+ /* <---- GRID  SECTION <<< QUERIES >>>   ----->*/
    
  @media screen and (min-width: 700px){ 
 
     .grid{
-  
-        display: grid;
-        grid-template-columns: repeat(2, 3fr);
-        grid-template-rows: repeat(1, 70px) ;
-        
-        grid-auto-flow: row;
-        grid-auto-columns:  minmax(1fr,1fr); 
       
-        margin: auto;
-        padding: 10px;
-        border-top: 1px solid rgba(0, 0, 0, 0.377);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.377);
-    
-        background-color: rgba(252, 187, 214, 0.93);
-        box-shadow: -1px 0px  3px rgb(158, 114, 184);
-        border-radius: 2px;
-        width: 90%;
-        min-width: clamp(80%, 2.2dvw,90%); 
+        width: 30%;
+        min-width: clamp(30%, 2.2dvw,70%); 
         max-width: clamp(fit-content, 2.2dvw,fit-content); 
         font-size: clamp(0.8rem, 2.2vw, 1rem);  
-        
-        
-        margin-top: 10%;
-        padding: 15px;
-        gap: 15px;
+        margin-top: 5%;
+      
       
     
      
@@ -160,3 +211,29 @@ de forma manual y se haga automaticamante */
 
 
    }
+
+
+
+   /*---------->  <<<SHOP BOTON >>> <-----------*/
+   @media screen and (min-width: 700px) {
+.shop_button {
+   
+    padding: 5px;
+    width: 80%;
+  }
+  .shop_button:hover {
+    padding: 4px;
+  } 
+}
+   /*----------> SHOP BOTON / <<<  ENDS >>>  <-----------*/
+   /*________________________________________________*/
+  
+
+
+
+
+
+     
+   /*_________________________________________________________*/ 
+ /*----------> <<<< QUERIES / ENDS >>>>  <-----------*/
+ /*--------------------------------------------------*/

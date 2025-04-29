@@ -103,7 +103,39 @@ legend{
       font-weight: bold;
 }
 
+/*---------->  <<< BOTON >>> <-----------*/
 
+.confirm_button {
+      background-color: #26e2aa;
+      color: rgba(255, 255, 255, 0.888);
+    
+      text-shadow: -1px 1px 1px #000000;
+      font-weight:600;
+      text-decoration: none;
+      padding: 5px 0px;
+      border-radius: 8px;
+      outline: 0;
+      font-size: 16px;
+      text-align: center;
+      margin: auto;
+      width: 50%;
+      transition: background-color 1s, border-radius 0.8s, outline 0.7s,
+      outline-offset 0.5s;
+    }
+    .confirm_button:hover {
+      background-color: rgba(255, 184, 240, 0.904);
+      outline: 1px solid rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      text-shadow: -1px 1px 1px #ffffff;
+      border-radius: 25px;
+      box-shadow: 0px 0px  20px rgb(221, 134, 255);
+      font-weight: 600;
+      padding: 4px 4px;
+    } 
+    
+     /*----------> BOTON / <<<  ENDS >>>  <-----------*/
+     /*________________________________________________*/
+    
 
 
            /*----------> <<< QUERIES RSVP STYLES >>> <-----------*/
@@ -149,6 +181,6 @@ legend{
    
    
    
-   /*_________________________________________________________*/ 
+   
  /*----------> <<<< QUERIES / ENDS >>>>  <-----------*/
  /*--------------------------------------------------*/

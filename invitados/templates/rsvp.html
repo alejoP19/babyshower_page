@@ -14,19 +14,25 @@
 <body class="rsvp__img">
     <img class="rsvp__invitation" src="{% static 'invitados/img/invit_transparent.png' %}" alt="">
    
-    <form>
+    <form action="/assistance/" method="post">
+        {% csrf_token %}
+        {{ form }}
           <h2>
             Assistance Form</h2>
           <fieldset>
                 <legend>Guest Information</legend>
-                <input id="nombre" type="text" placeholder="Enter your names">
-                <input id="nombre" type="text" placeholder="Enter your last name">   
+                <input  type="text" placeholder="Enter your names" name="names">
+                <input type="text" placeholder="Enter your last name" name="last_name">   
           </fieldset>
+
           
 <fieldset>
     <legend>Number of Companions</legend>
-    <input type="number" placeholder="Choose quantity">
+    <input type="number" placeholder="Choose quantity" name="quantity">
 </fieldset>
+
+<input  type="submit" class="confirm_button" value="Confirm">
+    </input>
     </form>
 
 </body>
