@@ -27,11 +27,11 @@ body,div{
 .grid{
     position: relative;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(1, 2fr);
     grid-template-rows: repeat(1, 2fr) ;
     
     grid-auto-flow: row;
-    grid-auto-columns:  minmax(1fr,1fr); 
+    grid-auto-columns:  minmax(1fr,2fr); 
   
     margin: auto;
     padding: 10px;
@@ -41,9 +41,9 @@ body,div{
     background-color: rgba(255, 198, 222, 0.93);
     box-shadow: -1px 0px  3px rgb(158, 114, 184);
     border-radius: 2px;
-    width: 88%;
-    min-width: clamp(80%, 2.2dvw,90%); 
-    max-width: clamp(fit-content, 2.2dvw,fit-content); 
+    width: 97%;
+    min-width: 50%; 
+    max-width:fit-content; 
     font-size: clamp(0.8rem, 2.2vw, 1rem);  
     
     
@@ -72,7 +72,7 @@ body,div{
     position: relative;
     display: flex;
     flex-direction: column;
-  
+  width: 100%;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px  3px rgb(255, 147, 219);
     font-size: 30px;
@@ -80,6 +80,7 @@ body,div{
     color: aliceblue;
     min-height: 170px;
     min-width: 160px;
+   
     
    
 }
@@ -95,7 +96,8 @@ body,div{
    
     height: 100%;
     width: 100%;
-    padding: 15px;
+    max-width: fit-content;
+        padding: 15px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
