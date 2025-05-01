@@ -14,7 +14,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  top: 75%;
+  top: 82%;
   margin: auto;
 
    
@@ -25,24 +25,27 @@
   width:fit-content;
   height: 18px;
   min-height: max-content;
-  padding: 6px 8px;
+  padding: 4px 6px;
   border-radius:60px 40px 60px 40px;
   gap: 0;
 
 }
 
 .contenedor--item{
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: max-content;
-  height: max-content;
-  min-width:100px;
-  min-height:50px;
-  padding: 3px 15px 3px 15px ;
+  flex-direction:row;
+  justify-content:center;
+align-items: center;
+  width: min-content;
+  height: min-content;
+  min-width:60px;
+  min-height:20px;
+  padding: 6px 10px;
+
   gap:8px;
-  margin: 5px;
+  margin: 3px;
+
   background-color: #3f0b7070;
   outline: 1px solid #ff6abcd0;
   outline-offset: 1px solid #cfcfcfd0;
@@ -52,47 +55,50 @@
 
 }
 .contenedor--item:hover{
-  padding: 1px 1px;
-  margin: 0;
+  
+ 
   outline: 1px solid #cfcfcfd0;
    outline: 1px solid   rgba(164, 54, 255, 0.849);
   color: rgb(0, 0, 0);
   background-color: #ffffff9f;
+
+
   }
   
 
-.date--item {
-    
+.date--item{
+
   text-shadow: -2px 1px 1px #000000;
    font-family: 'Pristina';
    color: rgba(253, 216, 52, 0.87);
-   font-size: clamp(1.8rem, 2.2vw, 2rem);
+   font-size: clamp(0.9rem, 2.2vw, 1.2rem);
    font-weight: lighter;
-margin: 0;
+   margin: 0;
    padding: 0;
-   font-size: large;
+ 
 
  
 }
 .date--item:hover{
-
-  text-shadow: -2px 1px 1px #ffffff;
+ 
+  text-shadow: -2px 1px 1px #fffb00;
   color: rgba(0, 0, 0, 0.87);
+  margin-top: 2px;
+  
 }
+
 
 
 
 
 .numbers{
-  align-self: center;
-  font-size: clamp(0.9rem, 2.2vw, 1.5rem);
+position: relative;
+bottom: 2px;
+  font-size: clamp(0.8rem, 2.2vw, 1rem);
   color: #fc0f91;
   text-shadow: -1px 1px 1px #000000;
   font-weight: lighter; 
-
-
-
-  
+   
 }
 
 
@@ -102,8 +108,35 @@ margin: 0;
 @media screen and (min-width: 700px){
 
   .contenedor {
-   
-      margin-bottom: 13%;
+  
+    top: 50%;
+    }
+
+    .contenedor--item{
+      
+      width: min-content;
+      height: min-content;
+      min-width:70px;
+      min-height:30px;
+      padding: 8px 10px;
+    }
+
+    .date--item {
+     
+ 
+   font-weight: lighter;
+   margin: 0;
+   padding: 0;
+
+     
+    }
+    .numbers{
+      
+    
+      
+    
+    
+    
       
     }
     
