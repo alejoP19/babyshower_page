@@ -27,6 +27,7 @@ from django.conf.urls.static import static #importamos las urls para indicarle a
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('invitados.urls')),
+    path('', include('website.urls')),
 ]
 if settings.DEBUG:
       

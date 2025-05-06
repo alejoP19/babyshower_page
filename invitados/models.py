@@ -1,5 +1,7 @@
 from django.db import models
 
+ 
+
 
 class Guests(models.Model):
     names = models.CharField(max_length=60)
@@ -15,3 +17,4 @@ class Guests(models.Model):
 
     def __str__(self):
         return f"Name of the guest: {self.names}, \n 'last name: {self.last_name}, \n  and the number of companions are: {self.quantity}"
+    

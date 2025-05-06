@@ -5,6 +5,7 @@ from .forms import Assistance_Form
 
 def  home(request):
   return render(request, 'home.html')
+
 def  registry(request):
   return render(request, 'registry.html')
 def  rsvp(request):

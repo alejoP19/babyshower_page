@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 from django.contrib.messages import constants as mensajes_de_error   
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'invitados',
+    'website',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +58,7 @@ ROOT_URLCONF = 'babyShowerTina.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "templates" )],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -129,7 +131,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, "static" )),
 
 
 MEDIA_URL = '/media/' #para importar imagenes
-MEDIA_ROOT=os.path.join(BASE_DIR,  'media' )#para importar imagenes; 'media' es la carpeta 
+MEDIA_ROOT=os.path.join(os.path.dirname(BASE_DIR),"media_root")#para importar imagenes; 'media' es la carpeta 
 #donde las va a buscar python; luego se debe ir al archivo urls e importar este archivo
 # con el comando:  from django.conf import settings
 

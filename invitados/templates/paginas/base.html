@@ -31,7 +31,7 @@
 </head>
 
 
-<header class="header">
+<div class="top_frame">
 
     {% block titulo_pagina %} {% endblock %}
 
@@ -41,7 +41,7 @@
 
     </div>
 
-    <img class="logo-header" src="{% static 'invitados/img/logo_nav.png' %}" alt="">
+    <img class="logo-top_frame" src="{% static 'invitados/img/logo_nav.png' %}" alt="">
 
     <div class="nav_hdr__base">
         <ul class="nav_hdr">
@@ -51,10 +51,10 @@
             <li class="nav_hdr-item"><a href="#contact">Photos</a></li>
         </ul>
     </div>
-</header>
+</div>
 
 
-<div class="base__picture">
+<header class="base__picture">
     <div class="base__picture items">
         <h4 class="title">
             May 3, 2025 &middot; Shreveport, Lou, USA <br>
@@ -83,16 +83,18 @@
             </div>
         </div>
     </div>
+
+    
     <div class="nav-body">
         <ul class="nav-list-body" id="miLista">
             <li class="nav-item-body"><a href="{% url 'Home'%}" id="ir">Home</a></li>
             <li class="nav-item-body"><a href="{% url 'Registry'%}">Registry</a></li>
-            <li class="nav-item-body"><a href="#contact">Photos</a></li>
             <li class="nav-item-body"><a href="{% url 'Rsvp'%}">RSVP</a></li>
+            <li class="nav-item-body"><a href="#contact">Photos</a></li>
         </ul>
     </div>
 
-</div>
+</header>
 
     {% block content %}
 

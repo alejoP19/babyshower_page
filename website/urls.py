@@ -10,11 +10,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
 
-path('home', views.home, name="Home"),
-path('registry/', views.registry, name="Registry"),
-path('rsvp/', views.rsvp, name="Rsvp"),
-path('assistance/', views.assistance, name="Assistance"),
-path('base/', views.base, name="Base"),
+
 ]
 if settings.DEBUG:
       
