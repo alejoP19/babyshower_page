@@ -14,16 +14,19 @@ class CreatingQR(models.Model):
             return str(self.name)
 
         # def save(self, *args, **kwargs):
-             
+         
         #      qrcode_img= qrcode.make(self.name)
-        #      canvas = Image.new('RGB', (290, 290), (290, 290, 290))
-        #      draw=ImageDraw.Draw(canvas)
         
-        #     #  canvas.paste((0,0) + canvas.size, box=(0,0,255,255))
-        #      canvas.paste(qrcode_img,box=(0, 0, 290, 290))
+        #      canvas = Image.new('RGB', (100, 100), color='white')
+        #      draw=ImageDraw.Draw(canvas)
+        #      draw.line((0,0) + canvas.size, fill=(255,))
+        #      canvas.paste(qrcode_img, box=(0, 0, 290, 290))
+            
+          
            
         #     #  canvas.paste(im=qrcode_img,  box=(0, 0, 290, 290))
-        #     # #  draw.line((0,0) + canvas.size, fill=(255,))
+        #     #  canvas.paste((0,0) + canvas.size, box=(0, 0, 0, 0))
+           
         #      fname = f'qr_code-{self.name}.png'
         #      buffer= BytesIO()
         #      canvas.save(buffer,'PNG')
@@ -34,4 +37,3 @@ class CreatingQR(models.Model):
              
 
 
-# Create your models here.

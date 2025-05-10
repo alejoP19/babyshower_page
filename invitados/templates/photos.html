@@ -1,0 +1,46 @@
+{% extends "paginas/base.html" %}
+{% load static %}
+
+
+
+{% block titulo_pagina %}
+
+<h3 class="titulo_registry">Photos</h3>
+
+{% endblock %}          
+
+{% block content %}
+
+  <body class="photos_img">
+  
+    <section class="galery" id="galery">
+        <h2 class="galery__tittle">Our path</h2>
+        <div class="galery__container">
+
+              <div class="galery__img-container">
+                <img src="{% static 'invitados/img/cyv.jpg' %}" alt="">
+              </div>
+              <div class="galery__img-container">
+                <img src="{% static 'invitados/img/tina_working.jpg' %}" alt="">
+              </div>
+              <div class="galery__img-container">
+                <img src="{% static 'invitados/img/new_parents.jpg' %}" alt="">
+              </div>
+              <div class="galery__img-container">
+                <img src="{% static 'invitados/img/new_parents.jpg' %}" alt="">
+              </div>
+              <div class="galery__img-container">
+                <img src="{% static 'invitados/img/new_parents.jpg' %}" alt="">
+              </div>
+              <div class="galery__img-container">
+                <img src="{% static 'invitados/img/new_parents.jpg' %}" alt="">
+              </div>
+        </div>
+      
+  </section>
+
+
+
+  </body>
+
+  {% endblock %}

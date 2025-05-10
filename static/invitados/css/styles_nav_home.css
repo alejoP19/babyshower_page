@@ -144,7 +144,7 @@ background-position: center center
       flex-direction: row;
       text-align: center;
       align-self: center;
-      margin-top: 20%;
+      margin-top: 18%;
       z-index: 10;
 
       color: rgb(255, 255, 255);
@@ -593,7 +593,7 @@ width: 100%;
       
        .title{
             
-            top: 25%;
+            top: 23%;
            
       }
       

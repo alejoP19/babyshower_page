@@ -50,10 +50,10 @@
 
     <div class="nav">
         <ul class="nav-list">
-            <li class="nav-item"><a href="#contact">Home</a></li>
+            <li class="nav-item"><a href="{% url 'Home'%}">Home</a></li>
             <li class="nav-item"><a href="{% url 'Registry' %}">Registry</a></li>
-            <li class="nav-item"><a href="#contact">Photos</a></li>
             <li class="nav-item"><a href="{% url 'Rsvp'%}">RSVP</a></li>
+            <li class="nav-item"><a href="{% url 'Photos'%}">Photos</a></li>
         </ul>
     </div>
 </div>
@@ -93,7 +93,7 @@
             <li class="nav-item-body"><a href="{% url 'Home'%}" id="ir">Home</a></li>
             <li class="nav-item-body"><a href="{% url 'Registry'%}">Registry</a></li>
             <li class="nav-item-body"><a href="{% url 'Rsvp'%}">RSVP</a></li>
-            <li class="nav-item-body"><a href="#contact">Photos</a></li>
+            <li class="nav-item-body"><a href="{% url 'Photos'%}">Photos</a></li>
         </ul>
     </div>
     

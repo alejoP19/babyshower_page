@@ -25,9 +25,9 @@
     <link rel="stylesheet" href="{% static 'invitados/css/styles_cuenta_regresiva.css' %}">
     <link rel="stylesheet" href="{% static 'invitados/css/styles_registry.css' %}">
     <link rel="stylesheet" href="{% static 'invitados/css/styles_rsvp.css' %}">
-    
-    <script src="{% static 'invitados/js/cuenta_regresiva.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'invitados/css/styles_photos.css' %}">
 
+   
 </head>
 
 
@@ -48,7 +48,7 @@
             <li class="nav_hdr-item"><a href="{% url 'Home' %}">Home</a></li>
             <li class="nav_hdr-item"><a href="{% url 'Registry'%}">Registry</a></li>
             <li class="nav_hdr-item"><a href="{% url 'Rsvp'%}">RSVP</a></li>
-            <li class="nav_hdr-item"><a href="#contact">Photos</a></li>
+            <li class="nav_hdr-item"><a href="{% url 'Photos'%}">Photos</a></li>
         </ul>
     </div>
 </div>
@@ -90,17 +90,13 @@
             <li class="nav-item-body"><a href="{% url 'Home'%}" id="ir">Home</a></li>
             <li class="nav-item-body"><a href="{% url 'Registry'%}">Registry</a></li>
             <li class="nav-item-body"><a href="{% url 'Rsvp'%}">RSVP</a></li>
-            <li class="nav-item-body"><a href="#contact">Photos</a></li>
+            <li class="nav-item-body"><a href="{% url 'Photos'%}">Photos</a></li>
         </ul>
     </div>
 
 </header>
 
     {% block content %}
-
-
-
-
 
     {% endblock %}
 
@@ -118,3 +114,10 @@
         </div>
 
     </footer>
+
+    <script src="{% static 'invitados/js/cuenta_regresiva.js' %}"></script>
+    <script src="{% static 'invitados/js/alertas.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   
+    
+    
