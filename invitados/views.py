@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect,HttpResponse
 from django.template import loader
 from .forms import Assistance_Form
 from django.contrib import messages
+from django.http import JsonResponse
 
 
 def  home(request):
@@ -23,8 +24,12 @@ def assistance(request):
      formulario = Assistance_Form(request.POST or None,request.FILES or None)
     if formulario.is_valid():
         formulario.save()
-        messages.success(request, 'Asistencia registrada con éxito')  
-    return redirect('Home')  
+    return HttpResponse('invitados/home.html')
+     
+     
+       
+          
+       
       
     
 
