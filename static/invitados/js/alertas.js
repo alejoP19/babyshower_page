@@ -62,7 +62,7 @@ if (document.querySelector("#datos")) {
             if (resp.isConfirmed) {
                
         
-                Swal.fire({
+                let c = Swal.fire({
                   // background:' URL(/static/invitados/img/lets_share.jpg', 
                   background:'rgb(234, 224, 255)',
                   width:'370px',
@@ -76,7 +76,11 @@ if (document.querySelector("#datos")) {
                   showConfirmButton: true,
                 //   timer: 4000,
                 });
-              }if(resp){
+                return c;
+                
+              }
+            }).then((c) => {
+              if (c.isConfirmed) {
                 window.location.href = "/";
               }
             })
