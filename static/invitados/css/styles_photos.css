@@ -45,8 +45,9 @@ body,div{
 }
 .galery__tittle{
     font-size: 0.8rem;
-    margin-top: 5%;
-    margin-bottom: 0;
+      font-weight: 600;
+    margin-top: 6%;
+    text-shadow: -1px 1px 1px rgb(255, 255, 255);
 }
 .galery__container{
     display: grid;
@@ -99,6 +100,13 @@ outline: 2px solid rgb(255, 169, 244);
        
        
     }
+    .galery__tittle{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 4%;
+    text-shadow: -1px 2px 2px rgb(255, 255, 255);
+   
+}
     .galery__container{
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;

@@ -397,7 +397,6 @@ background-color: #3ddb5aec;
  position: absolute;
   display: flex;
   flex-direction: column;
-  height: 10%;
 bottom: 0;
 
   font-family: 'Verdana';
@@ -405,8 +404,10 @@ bottom: 0;
   justify-content: center;
   align-content: center;
   min-width: 100%;
-  max-height: fit-content;
   width: 100%;
+  height: fit-content;
+  min-height: 12%;
+ 
   font-size: smaller;
   padding: 10px 0px 30px 0px;
  
@@ -417,12 +418,13 @@ bottom: 0;
       
       
 .left__text__footer--base {
-  margin-top:-48px;
+  margin-top:-38px;
   margin-bottom: 3%;
   display: flex;
   flex-direction: row;
   align-items: center;
   align-self: center;
+  justify-self: center;
   color: rgb(255, 187, 227);
   letter-spacing: 0.5px;
   word-spacing: 1px;

@@ -257,16 +257,17 @@ list-style: none;
       
       
       .left__text__footer--base {
-        margin-top:-40px;
-        margin-bottom: 3%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        align-self: center;
-        color: rgb(255, 187, 227);
-        letter-spacing: 0.5px;
-        word-spacing: 1px;
-        gap: 4px;
+        margin-top:-38px;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+  color: rgb(255, 187, 227);
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  gap: 4px;
        
       }
       .left__text__footer--base:hover{
