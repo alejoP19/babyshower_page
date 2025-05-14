@@ -69,7 +69,7 @@ body,div{
 }
 .galery__img-container:hover{
  opacity: 0.95;
- outline: 2px solid white;
+outline: 2px solid rgb(255, 169, 244);
 }
 .galery__img-container img{
  
@@ -111,39 +111,57 @@ body,div{
         width: 100%;
         height: 100%;
     }
-  
+ 
+.galery__container .galery__img-container:nth-child(2){
+
+    outline: none
+}
 .galery__container .galery__img-container:nth-child(2) img{
 
-       height: 106%;
+       height: 106%; 
+}
+.galery__container .galery__img-container:nth-child(2) img:hover{
+   
+    outline: 2px solid rgb(255, 169, 244);
+    padding-top: 0%;
+    margin-top:0;   
+     
   
 }
+
+ .galery__container .galery__img-container:nth-child(3){
+
+    outline: none
+}
+.galery__container .galery__img-container:nth-child(3) img{
+
+       height: 109%; 
+}
+.galery__container .galery__img-container:nth-child(3) img:hover{
+   
+    outline: 2px solid rgb(255, 169, 244);
+    padding-top: 0%;
+    margin-top:0;        
+}
+
+ .galery__container .galery__img-container:nth-child(6){
+
+    outline: none
+}
+.galery__container .galery__img-container:nth-child(6) img{
+
+       height: 178%; 
+}
+.galery__container .galery__img-container:nth-child(6) img:hover{
+   
+    outline: 2px solid rgb(255, 169, 244);
+    padding-top: 0%;
+    margin-top:0;        
+}
+
  
-
- .galery__container .galery__img-container:nth-child(2):hover{
-     height: 100%;
-      outline: 2px solid rgb(250, 103, 238);
-    
  }
-
- .galery__container .galery__img-container:nth-child(3) img{
-
-       height: 109%;
-  
-}
- .galery__container .galery__img-container:nth-child(3) img:hover{ 
-   position: relative;
-   display: flex;
-   margin-top:0;
-     
-     
-    
-} 
-
- .galery__img-container:nth-child(3):hover{
-     height: fit-content;
-    
- }
- }
+ 
 
  
 
